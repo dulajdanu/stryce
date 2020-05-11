@@ -1,6 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:stryce/views/PutImage.dart';
 
 import '../sizeConfig.dart';
 
@@ -170,7 +171,12 @@ class _AddVerificationCodeState extends State<AddVerificationCode> {
                 child: ButtonTheme(
                   child: RaisedButton(
                     color: Colors.grey,
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => PutYouBest()));
+                    },
                     child: AutoSizeText(
                       "NEXT >",
                       style: GoogleFonts.montserrat(
