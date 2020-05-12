@@ -1,6 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:stryce/views/ProfileInfo.dart';
 
 import '../sizeConfig.dart';
 
@@ -70,41 +71,12 @@ class _PutYouBestState extends State<PutYouBest> {
               // color: Colors.greenAccent,
             ),
             Container(
+              margin: EdgeInsets.only(left: margin),
               height: blockHeight * 10,
-              // color: Colors.redAccent,
-              margin: EdgeInsets.symmetric(horizontal: margin),
-              alignment: Alignment.topLeft,
-              child: Row(
-                children: <Widget>[
-                  Expanded(
-                      child: Container(
-                    // color: Colors.yellow,
-                    decoration: BoxDecoration(
-                        border:
-                            Border.all(color: Colors.grey, width: blockWidth)),
-                  )),
-                  SizedBox(
-                    width: blockWidth * 2,
-                  ),
-                  Expanded(
-                      child: Container(
-                    // color: Colors.blueGrey,
-                    decoration: BoxDecoration(
-                        border:
-                            Border.all(color: Colors.grey, width: blockWidth)),
-                  )),
-                  SizedBox(
-                    width: blockWidth * 2,
-                  ),
-                  Expanded(
-                      child: Container(
-                    // color: Colors.greenAccent,
-                    decoration: BoxDecoration(
-                        border:
-                            Border.all(color: Colors.grey, width: blockWidth)),
-                  ))
-                ],
-              ),
+              // padding: EdgeInsets.all(blockHeight),
+              // color: Colors.red,
+              alignment: Alignment.centerLeft,
+              child: HorizontalImagesView(blockHeight),
             ),
             Container(
               // color: Colors.redAccent,
@@ -148,7 +120,7 @@ class _PutYouBestState extends State<PutYouBest> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => PutYouBest()));
+                              builder: (context) => ProfileInfo()));
                     },
                     child: AutoSizeText(
                       "NEXT >",
@@ -164,5 +136,70 @@ class _PutYouBestState extends State<PutYouBest> {
         ),
       ),
     ));
+  }
+
+  HorizontalImagesView(double blockHeight) {
+    return ListView(
+      // This next line does the trick.
+      scrollDirection: Axis.horizontal,
+      children: <Widget>[
+        Container(
+          // color: Colors.yellow,
+          margin: EdgeInsets.symmetric(horizontal: 5),
+          height: blockHeight * 10,
+          width: blockHeight * 10,
+
+          decoration: BoxDecoration(
+              border: Border.all(color: Colors.grey, width: blockHeight / 2)),
+        ),
+        Container(
+          // color: Colors.yellow,
+          margin: EdgeInsets.symmetric(horizontal: 5),
+          height: blockHeight * 10,
+          width: blockHeight * 10,
+
+          decoration: BoxDecoration(
+              // color: Colors.yellow,
+
+              border: Border.all(color: Colors.grey, width: blockHeight / 2)),
+        ),
+        Container(
+          // color: Colors.yellow,
+          margin: EdgeInsets.symmetric(horizontal: 5),
+          height: blockHeight * 10,
+          width: blockHeight * 10,
+
+          decoration: BoxDecoration(
+              border: Border.all(color: Colors.grey, width: blockHeight / 2)),
+        ),
+        Container(
+          // color: Colors.yellow,
+          margin: EdgeInsets.symmetric(horizontal: 5),
+          height: blockHeight * 10,
+          width: blockHeight * 10,
+
+          decoration: BoxDecoration(
+              border: Border.all(color: Colors.grey, width: blockHeight / 2)),
+        ),
+        Container(
+          // color: Colors.yellow,
+          margin: EdgeInsets.symmetric(horizontal: 5),
+          height: blockHeight * 10,
+          width: blockHeight * 10,
+
+          decoration: BoxDecoration(
+              border: Border.all(color: Colors.grey, width: blockHeight / 2)),
+        ),
+        Container(
+          // color: Colors.yellow,
+          margin: EdgeInsets.symmetric(horizontal: 5),
+          height: blockHeight * 10,
+          width: blockHeight * 10,
+
+          decoration: BoxDecoration(
+              border: Border.all(color: Colors.grey, width: blockHeight / 2)),
+        ),
+      ],
+    );
   }
 }

@@ -22,6 +22,7 @@ class _AddVerificationCodeState extends State<AddVerificationCode> {
     double blockWidth = SizeConfig.safeBlockHorizontal;
     return SafeArea(
         child: Scaffold(
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
@@ -40,28 +41,33 @@ class _AddVerificationCodeState extends State<AddVerificationCode> {
                     Container(
                       height: blockHeight * 10,
                       // color: Colors.green,
-                      child: Row(
-                        children: <Widget>[
-                          Container(
-                            // color: Colors.white,
-                            width: blockHeight * 10,
-                          ),
-                          Expanded(
-                              child: Container(
-                            // color: Colors.grey,
-                            alignment: Alignment.center,
-                            child: Container(
-                              height: blockHeight * 6,
-                              // color: Colors.redAccent,
-                              alignment: Alignment.centerLeft,
-                              child: AutoSizeText(
-                                "Stryce",
-                                style: GoogleFonts.montserrat(fontSize: 40),
-                                minFontSize: 25,
-                              ),
-                            ),
-                          ))
-                        ],
+                      // child: Row(
+                      //   children: <Widget>[
+                      //     Container(
+                      //       // color: Colors.white,
+                      //       width: blockHeight * 10,
+                      //     ),
+                      //     Expanded(
+                      //         child: Container(
+                      //       // color: Colors.grey,
+                      //       alignment: Alignment.center,
+                      //       child: Container(
+                      //         height: blockHeight * 6,
+                      //         // color: Colors.redAccent,
+                      //         alignment: Alignment.centerLeft,
+                      //         child: AutoSizeText(
+                      //           "Stryce",
+                      //           style: GoogleFonts.montserrat(fontSize: 40),
+                      //           minFontSize: 25,
+                      //         ),
+                      //       ),
+                      //     ))
+                      //   ],
+                      // ),
+                      alignment: Alignment.topLeft,
+                      child: Image.asset(
+                        'assets/logo.jpg',
+                        fit: BoxFit.fitWidth,
                       ),
                     ),
                     Container(
