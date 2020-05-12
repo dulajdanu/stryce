@@ -93,6 +93,9 @@ class _PutYouBestState extends State<PutYouBest> {
                     // enabledBorder: UnderlineInputBorder(
                     //   borderSide: BorderSide(color: Colors.red, width: 5.0),
                     // ),
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.grey, width: 3),
+                    ),
                     focusedBorder: UnderlineInputBorder(
                       borderSide: BorderSide(color: Colors.grey, width: 3),
                     ),

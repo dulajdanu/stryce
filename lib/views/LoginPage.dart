@@ -174,6 +174,14 @@ class _LoginPageState extends State<LoginPage> {
                                     decoration: InputDecoration(
                                         // suffixIcon:
                                         //     Icon(Icons.phone, color: Colors.black),
+                                        enabledBorder: UnderlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: Colors.black, width: 3),
+                                        ),
+                                        focusedBorder: UnderlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: Colors.black, width: 3),
+                                        ),
                                         contentPadding: EdgeInsets.only(
                                           left: blockHeight * 2,
                                         ),
