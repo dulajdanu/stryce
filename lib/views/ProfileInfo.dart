@@ -5,6 +5,7 @@ import 'package:grouped_buttons/grouped_buttons.dart';
 import 'package:stryce/sizeConfig.dart';
 import 'package:intl/intl.dart';
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
+import 'package:stryce/views/PickAreasOfinterest.dart';
 
 class ProfileInfo extends StatefulWidget {
   ProfileInfo({Key key}) : super(key: key);
@@ -193,7 +194,7 @@ class _ProfileInfoState extends State<ProfileInfo> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => ProfileInfo()));
+                              builder: (context) => PickAreasOfInterest()));
                     },
                     child: AutoSizeText(
                       "NEXT >",
