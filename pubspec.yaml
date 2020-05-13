@@ -24,6 +24,8 @@ dependencies:
   flutter_custom_clippers: ^1.1.1
   grouped_buttons: ^1.0.4
   datetime_picker_formfield: ^1.0.0
+  font_awesome_flutter: ^8.8.1
+
 
 
 
