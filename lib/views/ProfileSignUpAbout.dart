@@ -376,6 +376,8 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
           margin: EdgeInsets.symmetric(horizontal: 5),
           // height: blockHeight * 10,
           width: blockHeight * 30,
+          alignment: Alignment.center,
+          child: Image.asset("assets/virat.jpeg"),
 
           decoration: BoxDecoration(
               border: Border.all(color: Colors.grey, width: blockHeight / 2)),
@@ -385,6 +387,11 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
           margin: EdgeInsets.symmetric(horizontal: 5),
           // height: blockHeight * 10,
           width: blockHeight * 30,
+          alignment: Alignment.center,
+          child: Image.asset(
+            "assets/virat.jpg",
+            fit: BoxFit.cover,
+          ),
 
           decoration: BoxDecoration(
               // color: Colors.yellow,

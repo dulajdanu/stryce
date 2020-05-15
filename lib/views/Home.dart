@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:stryce/sizeConfig.dart';
 import 'package:stryce/views/LandingPage.dart';
+import 'package:stryce/views/MessagesView.dart';
 import 'package:stryce/views/ProfileSignUpAbout.dart';
 
 class HomePage extends StatefulWidget {
@@ -16,10 +17,7 @@ class _HomePageState extends State<HomePage> {
 
   List<Widget> _widgetOptions = <Widget>[
     ProfileSignUp(),
-    Text(
-      'Index 1: Business',
-      // style: optionStyle,
-    ),
+    MesaagesView(),
     LandingPage(),
     Text(
       'Index 2: School',
@@ -54,19 +52,21 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.shifting,
         unselectedItemColor: Colors.black,
+        selectedIconTheme: IconThemeData(color: Colors.grey),
+        // selectedLabelStyle: TextStyle(color: Colors.grey),
         // iconSize: 10,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.alignJustify),
-            title: Text('Home'),
+            title: Text('Profile'),
           ),
           BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.comment),
             title: Text("Inbox"),
           ),
           BottomNavigationBarItem(
-            icon: Icon(FontAwesomeIcons.home),
-            title: Text('School'),
+            icon: ImageIcon(AssetImage("assets/icont.png")),
+            title: Text('Home'),
           ),
           BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.bell),
