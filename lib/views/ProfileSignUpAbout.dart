@@ -22,105 +22,105 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
     return SafeArea(
         child: Scaffold(
       backgroundColor: Colors.white,
-      body: Column(
-        children: <Widget>[
-          Container(
-            // color: Colors.blue,
-            height: blockHeight * 5,
-          ),
-          Container(
-            // color: Colors.red,
-            height: blockHeight * 8,
-            margin: EdgeInsets.symmetric(horizontal: margin),
-            alignment: Alignment.topLeft,
-            child: Image.asset("assets/logo.jpg"),
-          ),
-          Container(
-            // color: Colors.blue,
-            height: blockHeight * 2,
-          ),
-          Container(
-            margin: EdgeInsets.only(left: margin, top: margin / 5),
-            height: blockHeight * 30,
-            // padding: EdgeInsets.all(blockHeight),
-            // color: Colors.red,
-            alignment: Alignment.centerLeft,
-            child: HorizontalImagesView(blockHeight),
-          ),
-          Container(
-            // color: Colors.blue,
-            height: blockHeight * 5,
-          ),
-          Container(
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            Container(
+              // color: Colors.blue,
+              height: blockHeight * 5,
+            ),
+            Container(
               // color: Colors.red,
+              height: blockHeight * 8,
               margin: EdgeInsets.symmetric(horizontal: margin),
-              height: blockHeight * 4,
+              alignment: Alignment.topLeft,
+              child: Image.asset("assets/logo.jpg"),
+            ),
+            Container(
+              // color: Colors.blue,
+              height: blockHeight * 2,
+            ),
+            Container(
+              margin: EdgeInsets.only(left: margin, top: margin / 5),
+              height: blockHeight * 30,
+              // padding: EdgeInsets.all(blockHeight),
+              // color: Colors.red,
+              alignment: Alignment.centerLeft,
+              child: HorizontalImagesView(blockHeight),
+            ),
+            Container(
+              // color: Colors.blue,
+              height: blockHeight * 5,
+            ),
+            Container(
+                // color: Colors.red,
+                margin: EdgeInsets.symmetric(horizontal: margin),
+                height: blockHeight * 4,
+                alignment: Alignment.topLeft,
+                child: Row(
+                  children: <Widget>[
+                    AutoSizeText(
+                      "Ryan George",
+                      style: GoogleFonts.montserrat(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.grey),
+                      minFontSize: 18,
+                    ),
+                    SizedBox(
+                      width: blockWidth * 5,
+                    ),
+                    Icon(FontAwesomeIcons.mars)
+                  ],
+                )),
+            Container(
+              // color: Colors.blue,
+              height: blockHeight * 2,
+            ),
+            Container(
+              // color: Colors.green,
+              height: blockHeight * 3,
+              margin: EdgeInsets.symmetric(horizontal: margin),
               alignment: Alignment.topLeft,
               child: Row(
                 children: <Widget>[
-                  AutoSizeText(
-                    "Ryan George",
-                    style: GoogleFonts.montserrat(
-                        fontSize: 30,
-                        fontWeight: FontWeight.w500,
-                        color: Colors.grey),
-                    minFontSize: 18,
+                  Icon(
+                    FontAwesomeIcons.mapMarkerAlt,
+                    color: Colors.red,
                   ),
                   SizedBox(
-                    width: blockWidth * 5,
+                    width: blockWidth * 2,
                   ),
-                  Icon(FontAwesomeIcons.mars)
+                  Text(
+                    "Bangalore University",
+                    style: TextStyle(fontSize: 20, color: Colors.grey),
+                  )
                 ],
-              )),
-          Container(
-            // color: Colors.blue,
-            height: blockHeight * 2,
-          ),
-          Container(
-            // color: Colors.green,
-            height: blockHeight * 3,
-            margin: EdgeInsets.symmetric(horizontal: margin),
-            alignment: Alignment.topLeft,
-            child: Row(
-              children: <Widget>[
-                Icon(
-                  FontAwesomeIcons.mapMarkerAlt,
-                  color: Colors.red,
-                ),
-                SizedBox(
-                  width: blockWidth * 2,
-                ),
-                Text(
-                  "Bangalore University",
-                  style: TextStyle(fontSize: 20, color: Colors.grey),
-                )
-              ],
+              ),
             ),
-          ),
-          Container(
-            // color: Colors.blue,
-            height: blockHeight * 2,
-          ),
-          Container(
-            // color: Colors.blue,
-            height: blockHeight * 4,
-            alignment: Alignment.topLeft,
-            margin: EdgeInsets.symmetric(horizontal: margin),
-            child: AutoSizeText(
-              "\"I enjoy football and cricket\"",
-              style: GoogleFonts.montserrat(fontSize: 16, color: Colors.grey),
-              minFontSize: 14,
-              maxLines: 3,
+            Container(
+              // color: Colors.blue,
+              height: blockHeight * 2,
             ),
-          ),
-          Container(
-            // color: Colors.blue,
-            height: blockHeight * 2,
-          ),
-          Expanded(
-            child: Container(
+            Container(
+              // color: Colors.blue,
+              height: blockHeight * 4,
+              alignment: Alignment.topLeft,
+              margin: EdgeInsets.symmetric(horizontal: margin),
+              child: AutoSizeText(
+                "\"I enjoy football and cricket\"",
+                style: GoogleFonts.montserrat(fontSize: 16, color: Colors.grey),
+                minFontSize: 14,
+                maxLines: 3,
+              ),
+            ),
+            Container(
+              // color: Colors.blue,
+              height: blockHeight * 2,
+            ),
+            Container(
                 color: Colors.blue,
-                height: blockHeight * 10,
+                height: blockHeight * 33,
                 margin: EdgeInsets.symmetric(horizontal: margin),
                 alignment: Alignment.topLeft,
                 child: DefaultTabController(
@@ -200,11 +200,86 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                     ),
                     body: new TabBarView(
                       children: <Widget>[
-                        new Column(
-                          children: <Widget>[new Text("Cart Page")],
+                        Container(
+                          margin: EdgeInsets.only(top: blockHeight * 2),
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20),
+                                    border: Border.all(
+                                        width: blockHeight / 2,
+                                        color: Colors.grey)),
+                                padding: EdgeInsets.all(blockHeight),
+                                // color: Colors.red,
+                                child: Text(
+                                  "What is the most spontaneous thing you've ever done",
+                                  style: TextStyle(
+                                      fontSize: 18, color: Colors.grey),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
-                        new Column(
-                          children: <Widget>[new Text("Cart Page")],
+                        Container(
+                          // color: Colors.blue,
+                          margin: EdgeInsets.only(top: blockHeight * 2),
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                  height: blockHeight * 15,
+                                  // height: blockHeight,
+                                  decoration: BoxDecoration(
+                                      // color: Colors.yellow,
+                                      borderRadius: BorderRadius.circular(20),
+                                      border: Border.all(
+                                          width: blockHeight / 2,
+                                          color: Colors.grey)),
+                                  padding: EdgeInsets.all(blockHeight),
+                                  alignment: Alignment.topLeft,
+                                  child: Stack(
+                                    children: <Widget>[
+                                      // Align(
+                                      //   alignment: Alignment.bottomRight,
+                                      //   child: ButtonTheme(
+                                      //     child: Container(
+                                      //       decoration: BoxDecoration(
+                                      //           border: Border.all(
+                                      //               color: Colors.grey,
+                                      //               width: blockHeight / 2)),
+                                      //       child: RaisedButton(
+                                      //         // color: Colors.red,
+                                      //         color: Colors.white,
+
+                                      //         onPressed: () {},
+                                      //         child: Text("View"),
+                                      //       ),
+                                      //     ),
+                                      //   ),
+                                      // ),
+                                      Container(
+                                        height: blockHeight * 10,
+                                        child: Column(
+                                          children: <Widget>[
+                                            Text(
+                                              "Q. What is the impact of private CSR on the country",
+                                              style: TextStyle(
+                                                  fontSize: 18,
+                                                  color: Colors.grey),
+                                            ),
+                                            Text(
+                                              "A. The benefit of private firms  ",
+                                              style: TextStyle(
+                                                  fontSize: 18,
+                                                  color: Colors.grey),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ))
+                            ],
+                          ),
                         ),
                         Container(
                           margin: EdgeInsets.only(top: blockHeight * 2),
@@ -285,8 +360,8 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                     ),
                   ),
                 )),
-          ),
-        ],
+          ],
+        ),
       ),
     ));
   }
