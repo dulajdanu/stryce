@@ -41,34 +41,36 @@ class _AddVerificationCodeState extends State<AddVerificationCode> {
                     Container(
                       height: blockHeight * 10,
                       // color: Colors.green,
-                      // child: Row(
-                      //   children: <Widget>[
-                      //     Container(
-                      //       // color: Colors.white,
-                      //       width: blockHeight * 10,
-                      //     ),
-                      //     Expanded(
-                      //         child: Container(
-                      //       // color: Colors.grey,
-                      //       alignment: Alignment.center,
-                      //       child: Container(
-                      //         height: blockHeight * 6,
-                      //         // color: Colors.redAccent,
-                      //         alignment: Alignment.centerLeft,
-                      //         child: AutoSizeText(
-                      //           "Stryce",
-                      //           style: GoogleFonts.montserrat(fontSize: 40),
-                      //           minFontSize: 25,
-                      //         ),
-                      //       ),
-                      //     ))
-                      //   ],
-                      // ),
-                      alignment: Alignment.topLeft,
-                      child: Image.asset(
-                        'assets/logo.jpg',
-                        fit: BoxFit.fitWidth,
+                      child: Row(
+                        children: <Widget>[
+                          Container(
+                            // color: Colors.white,
+                            width: blockHeight * 10,
+                            alignment: Alignment.center,
+                            child: Image.asset("assets/logo2.png"),
+                          ),
+                          Expanded(
+                              child: Container(
+                            // color: Colors.grey,
+                            alignment: Alignment.center,
+                            child: Container(
+                              height: blockHeight * 6,
+                              // color: Colors.redAccent,
+                              alignment: Alignment.centerLeft,
+                              child: AutoSizeText(
+                                "BuddiesU",
+                                style: GoogleFonts.montserrat(fontSize: 40),
+                                minFontSize: 25,
+                              ),
+                            ),
+                          ))
+                        ],
                       ),
+                      alignment: Alignment.topLeft,
+                      // child: Image.asset(
+                      //   'assets/logo.jpg',
+                      //   fit: BoxFit.fitWidth,
+                      // ),
                     ),
                     Container(
                       height: blockHeight * 5,

@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:stryce/sizeConfig.dart';
 
 class LandingPage extends StatefulWidget {
@@ -19,6 +20,7 @@ class _LandingPageState extends State<LandingPage> {
     double blockWidth = SizeConfig.safeBlockHorizontal;
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.grey[200],
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.black,
           onPressed: () {},
@@ -46,7 +48,26 @@ class _LandingPageState extends State<LandingPage> {
                         // color: Colors.yellowAccent,
                         width: blockWidth * 40,
                         alignment: Alignment.topLeft,
-                        child: Image.asset("assets/logo.jpg"),
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              width: blockWidth * 10,
+                              // color: Colors.red,
+                              alignment: Alignment.center,
+                              child: Image.asset("assets/logo2.png"),
+                            ),
+                            Container(
+                              width: blockWidth * 30,
+                              // color: Colors.blue,
+                              alignment: Alignment.centerLeft,
+                              child: AutoSizeText(
+                                "BuddiesU",
+                                style: GoogleFonts.montserrat(fontSize: 20),
+                                minFontSize: 15,
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                       Container(
                         decoration: BoxDecoration(
@@ -68,387 +89,528 @@ class _LandingPageState extends State<LandingPage> {
                 // color: Colors.red,
                 height: blockHeight * 5,
               ),
-              Container(
-                padding: EdgeInsets.all(blockHeight),
+              Card(
                 margin: EdgeInsets.symmetric(horizontal: margin / 2),
-                decoration: BoxDecoration(
-                    border:
-                        Border.all(width: blockHeight / 2, color: Colors.grey)),
-                child: Column(
-                  children: <Widget>[
-                    Container(
-                      // color: Colors.red,
-                      height: blockHeight * 3,
-                      alignment: Alignment.topLeft,
-                      child: Row(
-                        children: <Widget>[
-                          Container(
-                            // color: Colors.yellowAccent,
-                            width: blockHeight * 3,
-                            alignment: Alignment.center,
-                            child: ImageIcon(AssetImage("assets/icont.png")),
-                          ),
-                          Container(
-                            // color: Colors.greenAccent,
-                            width: blockHeight * 10,
-                            alignment: Alignment.center,
-                            child: AutoSizeText(
-                              "Tags",
-                              style: TextStyle(fontSize: 16),
-                              minFontSize: 14,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      padding: EdgeInsets.all(blockHeight),
-                      // color: Colors.blueAccent,
-                      height: blockHeight * 10,
-                      alignment: Alignment.topLeft,
-                      child: AutoSizeText(
-                        "Why is the distance measured in the spped of light in space?",
-                        style: TextStyle(fontSize: 18),
-                        minFontSize: 15,
-                      ),
-                    ),
-                    Container(
-                      // color: Colors.red,
-                      height: blockHeight * 10,
-                      alignment: Alignment.centerLeft,
-                      child: Container(
-                        // color: Colors.blue,
-                        height: blockHeight * 8,
+                child: Container(
+                  padding: EdgeInsets.all(blockHeight),
+                  margin: EdgeInsets.symmetric(horizontal: margin / 2),
+                  // decoration: BoxDecoration(
+                  //     border:
+                  //         Border.all(width: blockHeight / 2, color: Colors.grey)),
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        // color: Colors.red,
+                        height: blockHeight * 3,
                         alignment: Alignment.topLeft,
                         child: Row(
                           children: <Widget>[
                             Container(
-                              decoration: BoxDecoration(
-                                  color: Colors.grey, shape: BoxShape.circle),
-                              width: blockHeight * 8,
-                            ),
-                            Expanded(
-                                // flex: 2,
-                                child: Container(
                               // color: Colors.yellowAccent,
-                              margin: EdgeInsets.only(left: blockHeight),
-                              alignment: Alignment.centerLeft,
-                              child: AutoSizeText(
-                                "Nreekay,Phd-Ruckers University\n\'Birds of the same feeather flock together\'",
-                                // style: TextStyle(fontSize: 10),
-                              ),
-                            )),
-                            Expanded(
-                                child: Container(
-                              // color: Colors.green,
+                              width: blockHeight * 3,
                               alignment: Alignment.center,
-                              child: Row(
-                                children: <Widget>[
-                                  Expanded(
-                                      child: Container(
-                                    // color: Colors.red,
-                                    alignment: Alignment.center,
-                                    child: Column(
-                                      children: <Widget>[
-                                        Expanded(
-                                          child: Icon(Icons.arrow_upward),
-                                        ),
-                                        Expanded(child: AutoSizeText("117"))
-                                      ],
-                                    ),
-                                  )),
-                                  Expanded(
-                                      child: Container(
-                                    // color: Colors.yellowAccent,
-                                    alignment: Alignment.center,
-                                    child: Column(
-                                      children: <Widget>[
-                                        Expanded(
-                                          child: Icon(Icons.message),
-                                        ),
-                                        Expanded(child: AutoSizeText("10"))
-                                      ],
-                                    ),
-                                  )),
-                                  Expanded(
-                                      child: Container(
-                                    // color: Colors.red,
-                                    alignment: Alignment.center,
-                                    child: Column(
-                                      children: <Widget>[
-                                        Expanded(
-                                          child: Icon(Icons.share),
-                                        ),
-                                        Expanded(child: AutoSizeText("218"))
-                                      ],
-                                    ),
-                                  ))
-                                ],
+                              child: ImageIcon(AssetImage("assets/icont.png")),
+                            ),
+                            Container(
+                              // color: Colors.greenAccent,
+                              width: blockHeight * 10,
+                              alignment: Alignment.center,
+                              child: AutoSizeText(
+                                "Tags",
+                                style: TextStyle(fontSize: 16),
+                                minFontSize: 14,
                               ),
-                            )),
+                            ),
                           ],
                         ),
                       ),
-                    )
-                  ],
+                      Container(
+                        padding: EdgeInsets.all(blockHeight),
+                        // color: Colors.blueAccent,
+                        height: blockHeight * 10,
+                        alignment: Alignment.topLeft,
+                        child: AutoSizeText(
+                          "Why is the distance measured in the spped of light in space?",
+                          style: TextStyle(fontSize: 18),
+                          minFontSize: 15,
+                        ),
+                      ),
+                      Container(
+                        // color: Colors.red,
+                        height: blockHeight * 10,
+                        alignment: Alignment.centerLeft,
+                        child: Container(
+                          // color: Colors.blue,
+                          height: blockHeight * 8,
+                          alignment: Alignment.topLeft,
+                          child: Row(
+                            children: <Widget>[
+                              Container(
+                                decoration: BoxDecoration(
+                                    color: Colors.grey, shape: BoxShape.circle),
+                                width: blockHeight * 8,
+                              ),
+                              Expanded(
+                                  // flex: 2,
+                                  child: Container(
+                                // color: Colors.yellowAccent,
+                                margin: EdgeInsets.only(left: blockHeight),
+                                alignment: Alignment.centerLeft,
+                                child: AutoSizeText(
+                                  "Nreekay,Phd-Ruckers University\n\'Birds of the same feeather flock together\'",
+                                  // style: TextStyle(fontSize: 10),
+                                ),
+                              )),
+                              Expanded(
+                                  child: Container(
+                                // color: Colors.green,
+                                alignment: Alignment.center,
+                                child: Row(
+                                  children: <Widget>[
+                                    Expanded(
+                                        child: Container(
+                                      // color: Colors.red,
+                                      alignment: Alignment.center,
+                                      child: Column(
+                                        children: <Widget>[
+                                          Expanded(
+                                            child: Icon(Icons.arrow_upward),
+                                          ),
+                                          Expanded(child: AutoSizeText("117"))
+                                        ],
+                                      ),
+                                    )),
+                                    Expanded(
+                                        child: Container(
+                                      // color: Colors.yellowAccent,
+                                      alignment: Alignment.center,
+                                      child: Column(
+                                        children: <Widget>[
+                                          Expanded(
+                                            child: Icon(Icons.message),
+                                          ),
+                                          Expanded(child: AutoSizeText("10"))
+                                        ],
+                                      ),
+                                    )),
+                                    Expanded(
+                                        child: Container(
+                                      // color: Colors.red,
+                                      alignment: Alignment.center,
+                                      child: Column(
+                                        children: <Widget>[
+                                          Expanded(
+                                            child: Icon(Icons.share),
+                                          ),
+                                          Expanded(child: AutoSizeText("218"))
+                                        ],
+                                      ),
+                                    ))
+                                  ],
+                                ),
+                              )),
+                            ],
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
               Container(
                 // color: Colors.red,
                 height: blockHeight * 2,
               ),
-              Container(
-                padding: EdgeInsets.all(blockHeight),
+              Card(
                 margin: EdgeInsets.symmetric(horizontal: margin / 2),
-                decoration: BoxDecoration(
-                    border:
-                        Border.all(width: blockHeight / 2, color: Colors.grey)),
-                child: Column(
-                  children: <Widget>[
-                    Container(
-                      // color: Colors.red,
-                      height: blockHeight * 3,
-                      alignment: Alignment.topLeft,
-                      child: Row(
-                        children: <Widget>[
-                          Container(
-                            // color: Colors.yellowAccent,
-                            width: blockHeight * 3,
-                            alignment: Alignment.center,
-                            child: ImageIcon(AssetImage("assets/icont.png")),
-                          ),
-                          Container(
-                            // color: Colors.greenAccent,
-                            width: blockHeight * 10,
-                            alignment: Alignment.center,
-                            child: AutoSizeText(
-                              "Tags",
-                              style: TextStyle(fontSize: 16),
-                              minFontSize: 14,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      padding: EdgeInsets.all(blockHeight),
-                      // color: Colors.blueAccent,
-                      height: blockHeight * 10,
-                      alignment: Alignment.topLeft,
-                      child: AutoSizeText(
-                        "Why is the distance measured in the spped of light in space?",
-                        style: TextStyle(fontSize: 18),
-                        minFontSize: 15,
-                      ),
-                    ),
-                    Container(
-                      // color: Colors.red,
-                      height: blockHeight * 10,
-                      alignment: Alignment.centerLeft,
-                      child: Container(
-                        // color: Colors.blue,
-                        height: blockHeight * 8,
+                child: Container(
+                  padding: EdgeInsets.all(blockHeight),
+                  margin: EdgeInsets.symmetric(horizontal: margin / 2),
+                  // decoration: BoxDecoration(
+                  //     border:
+                  //         Border.all(width: blockHeight / 2, color: Colors.grey)),
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        // color: Colors.red,
+                        height: blockHeight * 3,
                         alignment: Alignment.topLeft,
                         child: Row(
                           children: <Widget>[
                             Container(
-                              decoration: BoxDecoration(
-                                  color: Colors.grey, shape: BoxShape.circle),
-                              width: blockHeight * 8,
-                            ),
-                            Expanded(
-                                // flex: 2,
-                                child: Container(
                               // color: Colors.yellowAccent,
-                              margin: EdgeInsets.only(left: blockHeight),
-                              alignment: Alignment.centerLeft,
-                              child: AutoSizeText(
-                                "Nreekay,Phd-Ruckers University\n\'Birds of the same feeather flock together\'",
-                                // style: TextStyle(fontSize: 10),
-                              ),
-                            )),
-                            Expanded(
-                                child: Container(
-                              // color: Colors.green,
+                              width: blockHeight * 3,
                               alignment: Alignment.center,
-                              child: Row(
-                                children: <Widget>[
-                                  Expanded(
-                                      child: Container(
-                                    // color: Colors.red,
-                                    alignment: Alignment.center,
-                                    child: Column(
-                                      children: <Widget>[
-                                        Expanded(
-                                          child: Icon(Icons.arrow_upward),
-                                        ),
-                                        Expanded(child: AutoSizeText("117"))
-                                      ],
-                                    ),
-                                  )),
-                                  Expanded(
-                                      child: Container(
-                                    // color: Colors.yellowAccent,
-                                    alignment: Alignment.center,
-                                    child: Column(
-                                      children: <Widget>[
-                                        Expanded(
-                                          child: Icon(Icons.message),
-                                        ),
-                                        Expanded(child: AutoSizeText("10"))
-                                      ],
-                                    ),
-                                  )),
-                                  Expanded(
-                                      child: Container(
-                                    // color: Colors.red,
-                                    alignment: Alignment.center,
-                                    child: Column(
-                                      children: <Widget>[
-                                        Expanded(
-                                          child: Icon(Icons.share),
-                                        ),
-                                        Expanded(child: AutoSizeText("218"))
-                                      ],
-                                    ),
-                                  ))
-                                ],
+                              child: ImageIcon(AssetImage("assets/icont.png")),
+                            ),
+                            Container(
+                              // color: Colors.greenAccent,
+                              width: blockHeight * 10,
+                              alignment: Alignment.center,
+                              child: AutoSizeText(
+                                "Tags",
+                                style: TextStyle(fontSize: 16),
+                                minFontSize: 14,
                               ),
-                            )),
+                            ),
                           ],
                         ),
                       ),
-                    )
-                  ],
+                      Container(
+                        padding: EdgeInsets.all(blockHeight),
+                        // color: Colors.blueAccent,
+                        height: blockHeight * 10,
+                        alignment: Alignment.topLeft,
+                        child: AutoSizeText(
+                          "Why is the distance measured in the spped of light in space?",
+                          style: TextStyle(fontSize: 18),
+                          minFontSize: 15,
+                        ),
+                      ),
+                      Container(
+                        // color: Colors.red,
+                        height: blockHeight * 10,
+                        alignment: Alignment.centerLeft,
+                        child: Container(
+                          // color: Colors.blue,
+                          height: blockHeight * 8,
+                          alignment: Alignment.topLeft,
+                          child: Row(
+                            children: <Widget>[
+                              Container(
+                                decoration: BoxDecoration(
+                                    color: Colors.grey, shape: BoxShape.circle),
+                                width: blockHeight * 8,
+                              ),
+                              Expanded(
+                                  // flex: 2,
+                                  child: Container(
+                                // color: Colors.yellowAccent,
+                                margin: EdgeInsets.only(left: blockHeight),
+                                alignment: Alignment.centerLeft,
+                                child: AutoSizeText(
+                                  "Nreekay,Phd-Ruckers University\n\'Birds of the same feeather flock together\'",
+                                  // style: TextStyle(fontSize: 10),
+                                ),
+                              )),
+                              Expanded(
+                                  child: Container(
+                                // color: Colors.green,
+                                alignment: Alignment.center,
+                                child: Row(
+                                  children: <Widget>[
+                                    Expanded(
+                                        child: Container(
+                                      // color: Colors.red,
+                                      alignment: Alignment.center,
+                                      child: Column(
+                                        children: <Widget>[
+                                          Expanded(
+                                            child: Icon(Icons.arrow_upward),
+                                          ),
+                                          Expanded(child: AutoSizeText("117"))
+                                        ],
+                                      ),
+                                    )),
+                                    Expanded(
+                                        child: Container(
+                                      // color: Colors.yellowAccent,
+                                      alignment: Alignment.center,
+                                      child: Column(
+                                        children: <Widget>[
+                                          Expanded(
+                                            child: Icon(Icons.message),
+                                          ),
+                                          Expanded(child: AutoSizeText("10"))
+                                        ],
+                                      ),
+                                    )),
+                                    Expanded(
+                                        child: Container(
+                                      // color: Colors.red,
+                                      alignment: Alignment.center,
+                                      child: Column(
+                                        children: <Widget>[
+                                          Expanded(
+                                            child: Icon(Icons.share),
+                                          ),
+                                          Expanded(child: AutoSizeText("218"))
+                                        ],
+                                      ),
+                                    ))
+                                  ],
+                                ),
+                              )),
+                            ],
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
               Container(
                 // color: Colors.red,
                 height: blockHeight * 2,
               ),
-              Container(
-                padding: EdgeInsets.all(blockHeight),
+              Card(
                 margin: EdgeInsets.symmetric(horizontal: margin / 2),
-                decoration: BoxDecoration(
-                    border:
-                        Border.all(width: blockHeight / 2, color: Colors.grey)),
-                child: Column(
-                  children: <Widget>[
-                    Container(
-                      // color: Colors.red,
-                      height: blockHeight * 3,
-                      alignment: Alignment.topLeft,
-                      child: Row(
-                        children: <Widget>[
-                          Container(
-                            // color: Colors.yellowAccent,
-                            width: blockHeight * 3,
-                            alignment: Alignment.center,
-                            child: ImageIcon(AssetImage("assets/icont.png")),
-                          ),
-                          Container(
-                            // color: Colors.greenAccent,
-                            width: blockHeight * 10,
-                            alignment: Alignment.center,
-                            child: AutoSizeText(
-                              "Tags",
-                              style: TextStyle(fontSize: 16),
-                              minFontSize: 14,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      padding: EdgeInsets.all(blockHeight),
-                      // color: Colors.blueAccent,
-                      height: blockHeight * 10,
-                      alignment: Alignment.topLeft,
-                      child: AutoSizeText(
-                        "Why is the distance measured in the spped of light in space?",
-                        style: TextStyle(fontSize: 18),
-                        minFontSize: 15,
-                      ),
-                    ),
-                    Container(
-                      // color: Colors.red,
-                      height: blockHeight * 10,
-                      alignment: Alignment.centerLeft,
-                      child: Container(
-                        // color: Colors.blue,
-                        height: blockHeight * 8,
+                child: Container(
+                  padding: EdgeInsets.all(blockHeight),
+                  margin: EdgeInsets.symmetric(horizontal: margin / 2),
+                  // decoration: BoxDecoration(
+                  //     border:
+                  //         Border.all(width: blockHeight / 2, color: Colors.grey)),
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        // color: Colors.red,
+                        height: blockHeight * 3,
                         alignment: Alignment.topLeft,
                         child: Row(
                           children: <Widget>[
                             Container(
-                              decoration: BoxDecoration(
-                                  color: Colors.grey, shape: BoxShape.circle),
-                              width: blockHeight * 8,
-                            ),
-                            Expanded(
-                                // flex: 2,
-                                child: Container(
                               // color: Colors.yellowAccent,
-                              margin: EdgeInsets.only(left: blockHeight),
-                              alignment: Alignment.centerLeft,
-                              child: AutoSizeText(
-                                "Nreekay,Phd-Ruckers University\n\'Birds of the same feeather flock together\'",
-                                // style: TextStyle(fontSize: 10),
-                              ),
-                            )),
-                            Expanded(
-                                child: Container(
-                              // color: Colors.green,
+                              width: blockHeight * 3,
                               alignment: Alignment.center,
-                              child: Row(
-                                children: <Widget>[
-                                  Expanded(
-                                      child: Container(
-                                    // color: Colors.red,
-                                    alignment: Alignment.center,
-                                    child: Column(
-                                      children: <Widget>[
-                                        Expanded(
-                                          child: Icon(Icons.arrow_upward),
-                                        ),
-                                        Expanded(child: AutoSizeText("117"))
-                                      ],
-                                    ),
-                                  )),
-                                  Expanded(
-                                      child: Container(
-                                    // color: Colors.yellowAccent,
-                                    alignment: Alignment.center,
-                                    child: Column(
-                                      children: <Widget>[
-                                        Expanded(
-                                          child: Icon(Icons.message),
-                                        ),
-                                        Expanded(child: AutoSizeText("10"))
-                                      ],
-                                    ),
-                                  )),
-                                  Expanded(
-                                      child: Container(
-                                    // color: Colors.red,
-                                    alignment: Alignment.center,
-                                    child: Column(
-                                      children: <Widget>[
-                                        Expanded(
-                                          child: Icon(Icons.share),
-                                        ),
-                                        Expanded(child: AutoSizeText("218"))
-                                      ],
-                                    ),
-                                  ))
-                                ],
+                              child: ImageIcon(AssetImage("assets/icont.png")),
+                            ),
+                            Container(
+                              // color: Colors.greenAccent,
+                              width: blockHeight * 10,
+                              alignment: Alignment.center,
+                              child: AutoSizeText(
+                                "Tags",
+                                style: TextStyle(fontSize: 16),
+                                minFontSize: 14,
                               ),
-                            )),
+                            ),
                           ],
                         ),
                       ),
-                    )
-                  ],
+                      Container(
+                        padding: EdgeInsets.all(blockHeight),
+                        // color: Colors.blueAccent,
+                        height: blockHeight * 10,
+                        alignment: Alignment.topLeft,
+                        child: AutoSizeText(
+                          "Why is the distance measured in the spped of light in space?",
+                          style: TextStyle(fontSize: 18),
+                          minFontSize: 15,
+                        ),
+                      ),
+                      Container(
+                        // color: Colors.red,
+                        height: blockHeight * 10,
+                        alignment: Alignment.centerLeft,
+                        child: Container(
+                          // color: Colors.blue,
+                          height: blockHeight * 8,
+                          alignment: Alignment.topLeft,
+                          child: Row(
+                            children: <Widget>[
+                              Container(
+                                decoration: BoxDecoration(
+                                    color: Colors.grey, shape: BoxShape.circle),
+                                width: blockHeight * 8,
+                              ),
+                              Expanded(
+                                  // flex: 2,
+                                  child: Container(
+                                // color: Colors.yellowAccent,
+                                margin: EdgeInsets.only(left: blockHeight),
+                                alignment: Alignment.centerLeft,
+                                child: AutoSizeText(
+                                  "Nreekay,Phd-Ruckers University\n\'Birds of the same feeather flock together\'",
+                                  // style: TextStyle(fontSize: 10),
+                                ),
+                              )),
+                              Expanded(
+                                  child: Container(
+                                // color: Colors.green,
+                                alignment: Alignment.center,
+                                child: Row(
+                                  children: <Widget>[
+                                    Expanded(
+                                        child: Container(
+                                      // color: Colors.red,
+                                      alignment: Alignment.center,
+                                      child: Column(
+                                        children: <Widget>[
+                                          Expanded(
+                                            child: Icon(Icons.arrow_upward),
+                                          ),
+                                          Expanded(child: AutoSizeText("117"))
+                                        ],
+                                      ),
+                                    )),
+                                    Expanded(
+                                        child: Container(
+                                      // color: Colors.yellowAccent,
+                                      alignment: Alignment.center,
+                                      child: Column(
+                                        children: <Widget>[
+                                          Expanded(
+                                            child: Icon(Icons.message),
+                                          ),
+                                          Expanded(child: AutoSizeText("10"))
+                                        ],
+                                      ),
+                                    )),
+                                    Expanded(
+                                        child: Container(
+                                      // color: Colors.red,
+                                      alignment: Alignment.center,
+                                      child: Column(
+                                        children: <Widget>[
+                                          Expanded(
+                                            child: Icon(Icons.share),
+                                          ),
+                                          Expanded(child: AutoSizeText("218"))
+                                        ],
+                                      ),
+                                    ))
+                                  ],
+                                ),
+                              )),
+                            ],
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                // color: Colors.red,
+                height: blockHeight * 2,
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(horizontal: margin / 2),
+                child: Container(
+                  padding: EdgeInsets.all(blockHeight),
+                  margin: EdgeInsets.symmetric(horizontal: margin / 2),
+                  // decoration: BoxDecoration(
+                  //     border:
+                  //         Border.all(width: blockHeight / 2, color: Colors.grey)),
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        // color: Colors.red,
+                        height: blockHeight * 3,
+                        alignment: Alignment.topLeft,
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              // color: Colors.yellowAccent,
+                              width: blockHeight * 3,
+                              alignment: Alignment.center,
+                              child: ImageIcon(AssetImage("assets/icont.png")),
+                            ),
+                            Container(
+                              // color: Colors.greenAccent,
+                              width: blockHeight * 10,
+                              alignment: Alignment.center,
+                              child: AutoSizeText(
+                                "Tags",
+                                style: TextStyle(fontSize: 16),
+                                minFontSize: 14,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(blockHeight),
+                        // color: Colors.blueAccent,
+                        height: blockHeight * 10,
+                        alignment: Alignment.topLeft,
+                        child: AutoSizeText(
+                          "Why is the distance measured in the spped of light in space?",
+                          style: TextStyle(fontSize: 18),
+                          minFontSize: 15,
+                        ),
+                      ),
+                      Container(
+                        // color: Colors.red,
+                        height: blockHeight * 10,
+                        alignment: Alignment.centerLeft,
+                        child: Container(
+                          // color: Colors.blue,
+                          height: blockHeight * 8,
+                          alignment: Alignment.topLeft,
+                          child: Row(
+                            children: <Widget>[
+                              Container(
+                                decoration: BoxDecoration(
+                                    color: Colors.grey, shape: BoxShape.circle),
+                                width: blockHeight * 8,
+                              ),
+                              Expanded(
+                                  // flex: 2,
+                                  child: Container(
+                                // color: Colors.yellowAccent,
+                                margin: EdgeInsets.only(left: blockHeight),
+                                alignment: Alignment.centerLeft,
+                                child: AutoSizeText(
+                                  "Nreekay,Phd-Ruckers University\n\'Birds of the same feeather flock together\'",
+                                  // style: TextStyle(fontSize: 10),
+                                ),
+                              )),
+                              Expanded(
+                                  child: Container(
+                                // color: Colors.green,
+                                alignment: Alignment.center,
+                                child: Row(
+                                  children: <Widget>[
+                                    Expanded(
+                                        child: Container(
+                                      // color: Colors.red,
+                                      alignment: Alignment.center,
+                                      child: Column(
+                                        children: <Widget>[
+                                          Expanded(
+                                            child: Icon(Icons.arrow_upward),
+                                          ),
+                                          Expanded(child: AutoSizeText("117"))
+                                        ],
+                                      ),
+                                    )),
+                                    Expanded(
+                                        child: Container(
+                                      // color: Colors.yellowAccent,
+                                      alignment: Alignment.center,
+                                      child: Column(
+                                        children: <Widget>[
+                                          Expanded(
+                                            child: Icon(Icons.message),
+                                          ),
+                                          Expanded(child: AutoSizeText("10"))
+                                        ],
+                                      ),
+                                    )),
+                                    Expanded(
+                                        child: Container(
+                                      // color: Colors.red,
+                                      alignment: Alignment.center,
+                                      child: Column(
+                                        children: <Widget>[
+                                          Expanded(
+                                            child: Icon(Icons.share),
+                                          ),
+                                          Expanded(child: AutoSizeText("218"))
+                                        ],
+                                      ),
+                                    ))
+                                  ],
+                                ),
+                              )),
+                            ],
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
               Container(

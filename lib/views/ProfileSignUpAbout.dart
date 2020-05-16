@@ -21,20 +21,44 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
     double blockWidth = SizeConfig.safeBlockHorizontal;
     return SafeArea(
         child: Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey[200],
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             Container(
-              // color: Colors.blue,
-              height: blockHeight * 5,
-            ),
-            Container(
               // color: Colors.red,
               height: blockHeight * 8,
               margin: EdgeInsets.symmetric(horizontal: margin),
-              alignment: Alignment.topLeft,
-              child: Image.asset("assets/logo.jpg"),
+              alignment: Alignment.center,
+              child: Container(
+                alignment: Alignment.center,
+                height: blockHeight * 4,
+                child: Row(
+                  children: <Widget>[
+                    Container(
+                      color: Colors.white,
+                      width: blockHeight * 5,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/logo2.png"),
+                    ),
+                    Expanded(
+                        child: Container(
+                      // color: Colors.grey,
+                      alignment: Alignment.center,
+                      child: Container(
+                        height: blockHeight * 6,
+                        // color: Colors.redAccent,
+                        alignment: Alignment.centerLeft,
+                        child: AutoSizeText(
+                          "BuddiesU",
+                          style: GoogleFonts.montserrat(fontSize: 40),
+                          minFontSize: 25,
+                        ),
+                      ),
+                    ))
+                  ],
+                ),
+              ),
             ),
             Container(
               // color: Colors.blue,
@@ -126,7 +150,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                 child: DefaultTabController(
                   length: 3,
                   child: new Scaffold(
-                    backgroundColor: Colors.white,
+                    backgroundColor: Colors.grey[200],
                     appBar: new PreferredSize(
                       preferredSize: Size.fromHeight(blockHeight * 15),
                       child: new Container(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:stryce/sizeConfig.dart';
+import 'package:stryce/views/ChatPage.dart';
 import 'package:stryce/views/LandingPage.dart';
 import 'package:stryce/views/MessagesView.dart';
 import 'package:stryce/views/ProfileSignUpAbout.dart';
@@ -19,10 +20,7 @@ class _HomePageState extends State<HomePage> {
     ProfileSignUp(),
     MesaagesView(),
     LandingPage(),
-    Text(
-      'Index 2: School',
-      // style: optionStyle,
-    ),
+    ChatPage(),
     Text(
       'Index 2: School',
       // style: optionStyle,
@@ -65,7 +63,7 @@ class _HomePageState extends State<HomePage> {
             title: Text("Inbox"),
           ),
           BottomNavigationBarItem(
-            icon: ImageIcon(AssetImage("assets/icont.png")),
+            icon: ImageIcon(AssetImage("assets/logo2.png")),
             title: Text('Home'),
           ),
           BottomNavigationBarItem(
@@ -78,7 +76,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber[800],
+        selectedItemColor: Colors.grey,
         onTap: _onItemTapped,
       ),
     ));
