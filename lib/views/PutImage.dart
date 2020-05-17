@@ -22,6 +22,7 @@ class _PutYouBestState extends State<PutYouBest> {
     double blockWidth = SizeConfig.safeBlockHorizontal;
     return SafeArea(
         child: Scaffold(
+      backgroundColor: Colors.grey[200],
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[

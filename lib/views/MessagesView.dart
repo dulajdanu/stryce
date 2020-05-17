@@ -20,7 +20,7 @@ class _MesaagesViewState extends State<MesaagesView> {
     double blockWidth = SizeConfig.safeBlockHorizontal;
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.grey[200],
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
@@ -31,26 +31,31 @@ class _MesaagesViewState extends State<MesaagesView> {
                 alignment: Alignment.centerLeft,
                 child: Container(
                   // color: Colors.green,
-                  height: blockHeight * 6,
+                  height: blockHeight * 4,
                   alignment: Alignment.topLeft,
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Container(
-                        // color: Colors.yellowAccent,
-                        width: blockWidth * 40,
-                        alignment: Alignment.topLeft,
-                        child: Image.asset("assets/logo.jpg"),
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                            // color: Colors.grey,
-                            shape: BoxShape.circle),
-                        width: blockHeight * 6,
+                        // color: Colors.white,
+                        width: blockHeight * 5,
                         alignment: Alignment.center,
-                        child: IconButton(
-                            icon: Icon(Icons.search), onPressed: () {}),
-                      )
+                        child: Image.asset("assets/logo2.png"),
+                      ),
+                      Expanded(
+                          child: Container(
+                        // color: Colors.grey,
+                        alignment: Alignment.center,
+                        child: Container(
+                          height: blockHeight * 6,
+                          // color: Colors.redAccent,
+                          alignment: Alignment.centerLeft,
+                          child: AutoSizeText(
+                            "BuddiesU",
+                            style: GoogleFonts.montserrat(fontSize: 20),
+                            minFontSize: 15,
+                          ),
+                        ),
+                      ))
                     ],
                   ),
                 ),

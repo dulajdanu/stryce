@@ -27,16 +27,17 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
           children: <Widget>[
             Container(
               // color: Colors.red,
-              height: blockHeight * 8,
-              margin: EdgeInsets.symmetric(horizontal: margin),
-              alignment: Alignment.center,
+              height: blockHeight * 10,
+              margin: EdgeInsets.symmetric(horizontal: margin / 2),
+              alignment: Alignment.centerLeft,
               child: Container(
-                alignment: Alignment.center,
+                // color: Colors.green,
                 height: blockHeight * 4,
+                alignment: Alignment.topLeft,
                 child: Row(
                   children: <Widget>[
                     Container(
-                      color: Colors.white,
+                      // color: Colors.white,
                       width: blockHeight * 5,
                       alignment: Alignment.center,
                       child: Image.asset("assets/logo2.png"),
@@ -51,8 +52,8 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                         alignment: Alignment.centerLeft,
                         child: AutoSizeText(
                           "BuddiesU",
-                          style: GoogleFonts.montserrat(fontSize: 40),
-                          minFontSize: 25,
+                          style: GoogleFonts.montserrat(fontSize: 20),
+                          minFontSize: 15,
                         ),
                       ),
                     ))
@@ -111,13 +112,15 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                   Icon(
                     FontAwesomeIcons.mapMarkerAlt,
                     color: Colors.red,
+                    size: blockHeight * 2.5,
                   ),
                   SizedBox(
                     width: blockWidth * 2,
                   ),
-                  Text(
+                  AutoSizeText(
                     "Bangalore University",
                     style: TextStyle(fontSize: 20, color: Colors.grey),
+                    minFontSize: 15,
                   )
                 ],
               ),
@@ -143,7 +146,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
               height: blockHeight * 2,
             ),
             Container(
-                color: Colors.blue,
+                // color: Colors.blue,
                 height: blockHeight * 33,
                 margin: EdgeInsets.symmetric(horizontal: margin),
                 alignment: Alignment.topLeft,
@@ -204,6 +207,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                               // color: Colors.yellow,
                               width: blockWidth * 20,
                               child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
                                   AutoSizeText(
                                     "Interest",
@@ -211,10 +215,10 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                                         color: Colors.grey, fontSize: 16),
                                     minFontSize: 14,
                                   ),
-                                  Text(
-                                    "",
-                                    style: TextStyle(color: Colors.grey),
-                                  ),
+                                  // Text(
+                                  //   "",
+                                  //   style: TextStyle(color: Colors.grey),
+                                  // ),
                                 ],
                               ),
                             ),

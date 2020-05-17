@@ -46,6 +46,7 @@ class _HomePageState extends State<HomePage> {
     double blockWidth = SizeConfig.safeBlockHorizontal;
     return SafeArea(
         child: Scaffold(
+      backgroundColor: Colors.grey[200],
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.shifting,
@@ -68,11 +69,11 @@ class _HomePageState extends State<HomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.bell),
-            title: Text('School'),
+            title: Text('Notifications'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
-            title: Text('School'),
+            title: Text('Settings'),
           ),
         ],
         currentIndex: _selectedIndex,

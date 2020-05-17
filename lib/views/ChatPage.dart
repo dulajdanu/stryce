@@ -19,7 +19,7 @@ class _ChatPageState extends State<ChatPage> {
     double blockWidth = SizeConfig.safeBlockHorizontal;
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.grey[200],
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[

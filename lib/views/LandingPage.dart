@@ -39,7 +39,7 @@ class _LandingPageState extends State<LandingPage> {
                 alignment: Alignment.centerLeft,
                 child: Container(
                   // color: Colors.green,
-                  height: blockHeight * 6,
+                  height: blockHeight * 4,
                   alignment: Alignment.topLeft,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
