@@ -12,6 +12,9 @@ class ProfileSignUp extends StatefulWidget {
 }
 
 class _ProfileSignUpState extends State<ProfileSignUp> {
+  final Shader linearGradient = LinearGradient(
+    colors: <Color>[Color(0xffec375c), Color(0xfff46163), Color(0xfff98467)],
+  ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
@@ -89,7 +92,8 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                       style: GoogleFonts.montserrat(
                           fontSize: 30,
                           fontWeight: FontWeight.w500,
-                          color: Colors.grey),
+                          // color: Colors.grey,
+                          foreground: Paint()..shader = linearGradient),
                       minFontSize: 18,
                     ),
                     SizedBox(
@@ -320,66 +324,143 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                             children: <Widget>[
                               Container(
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    border: Border.all(
-                                        color: Colors.grey,
-                                        width: blockHeight / 2)),
-                                padding: EdgeInsets.all(blockWidth),
-                                child: Text("Athletics"),
+                                  gradient: LinearGradient(colors: [
+                                    Color(0xffec375c),
+                                    Color(0xfff46163),
+                                    Color(0xfff98467)
+                                  ]),
+                                  borderRadius: BorderRadius.circular(10),
+                                  // border: Border.all(
+                                  //     color: Colors.grey,
+                                  //     width: blockHeight / 2)
+                                ),
+                                padding: EdgeInsets.all(blockWidth * 2),
+                                child: Text(
+                                  "Athletics",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500),
+                                ),
                               ),
                               Container(
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    border: Border.all(
-                                        color: Colors.grey,
-                                        width: blockHeight / 2)),
-                                padding: EdgeInsets.all(blockWidth),
-                                child: Text("Football"),
+                                  gradient: LinearGradient(colors: [
+                                    Color(0xffec375c),
+                                    Color(0xfff46163),
+                                    Color(0xfff98467)
+                                  ]),
+                                  borderRadius: BorderRadius.circular(10),
+                                  // border: Border.all(
+                                  //     color: Colors.grey,
+                                  //     width: blockHeight / 2)
+                                ),
+                                padding: EdgeInsets.all(blockWidth * 2),
+                                child: Text(
+                                  "Football",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500),
+                                ),
                               ),
                               Container(
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    border: Border.all(
-                                        color: Colors.grey,
-                                        width: blockHeight / 2)),
-                                padding: EdgeInsets.all(blockWidth),
-                                child: Text("Basketball"),
+                                  gradient: LinearGradient(colors: [
+                                    Color(0xffec375c),
+                                    Color(0xfff46163),
+                                    Color(0xfff98467)
+                                  ]),
+                                  borderRadius: BorderRadius.circular(10),
+                                  // border: Border.all(
+                                  //     color: Colors.grey,
+                                  //     width: blockHeight / 2)
+                                ),
+                                padding: EdgeInsets.all(blockWidth * 2),
+                                child: Text(
+                                  "Basketball",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500),
+                                ),
                               ),
                               Container(
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    border: Border.all(
-                                        color: Colors.grey,
-                                        width: blockHeight / 2)),
-                                padding: EdgeInsets.all(blockWidth),
-                                child: Text("Hockey"),
+                                  gradient: LinearGradient(colors: [
+                                    Color(0xffec375c),
+                                    Color(0xfff46163),
+                                    Color(0xfff98467)
+                                  ]),
+                                  borderRadius: BorderRadius.circular(10),
+                                  // border: Border.all(
+                                  //     color: Colors.grey,
+                                  //     width: blockHeight / 2)
+                                ),
+                                padding: EdgeInsets.all(blockWidth * 2),
+                                child: Text(
+                                  "Hockey",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500),
+                                ),
                               ),
                               Container(
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    border: Border.all(
-                                        color: Colors.grey,
-                                        width: blockHeight / 2)),
-                                padding: EdgeInsets.all(blockWidth),
-                                child: Text("Physics"),
+                                  gradient: LinearGradient(colors: [
+                                    Color(0xffec375c),
+                                    Color(0xfff46163),
+                                    Color(0xfff98467)
+                                  ]),
+                                  borderRadius: BorderRadius.circular(10),
+                                  // border: Border.all(
+                                  //     color: Colors.grey,
+                                  //     width: blockHeight / 2)
+                                ),
+                                padding: EdgeInsets.all(blockWidth * 2),
+                                child: Text(
+                                  "Physics",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500),
+                                ),
                               ),
                               Container(
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    border: Border.all(
-                                        color: Colors.grey,
-                                        width: blockHeight / 2)),
-                                padding: EdgeInsets.all(blockWidth),
-                                child: Text("Chemistry"),
+                                  gradient: LinearGradient(colors: [
+                                    Color(0xffec375c),
+                                    Color(0xfff46163),
+                                    Color(0xfff98467)
+                                  ]),
+                                  borderRadius: BorderRadius.circular(10),
+                                  // border: Border.all(
+                                  //     color: Colors.grey,
+                                  //     width: blockHeight / 2)
+                                ),
+                                padding: EdgeInsets.all(blockWidth * 2),
+                                child: Text(
+                                  "Chemistry",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500),
+                                ),
                               ),
                               Container(
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    border: Border.all(
-                                        color: Colors.grey,
-                                        width: blockHeight / 2)),
-                                padding: EdgeInsets.all(blockWidth),
-                                child: Text("Maths"),
+                                  gradient: LinearGradient(colors: [
+                                    Color(0xffec375c),
+                                    Color(0xfff46163),
+                                    Color(0xfff98467)
+                                  ]),
+                                  borderRadius: BorderRadius.circular(10),
+                                  // border: Border.all(
+                                  //     color: Colors.grey,
+                                  //     width: blockHeight / 2)
+                                ),
+                                padding: EdgeInsets.all(blockWidth * 2),
+                                child: Text(
+                                  "Maths",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500),
+                                ),
                               ),
                             ],
                           ),

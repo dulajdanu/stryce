@@ -2,6 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:stryce/sizeConfig.dart';
+import 'dart:math' as math; // import this
 
 class LandingPage extends StatefulWidget {
   LandingPage({Key key}) : super(key: key);
@@ -15,7 +16,7 @@ class _LandingPageState extends State<LandingPage> {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
 
-    double margin = SizeConfig.safeBlockHorizontal * 10;
+    double margin = SizeConfig.safeBlockHorizontal * 5;
     double blockHeight = SizeConfig.safeBlockVertical;
     double blockWidth = SizeConfig.safeBlockHorizontal;
     return SafeArea(
@@ -106,11 +107,19 @@ class _LandingPageState extends State<LandingPage> {
                         child: Row(
                           children: <Widget>[
                             Container(
-                              // color: Colors.yellowAccent,
-                              width: blockHeight * 3,
-                              alignment: Alignment.center,
-                              child: ImageIcon(AssetImage("assets/icont.png")),
-                            ),
+                                // color: Colors.yellowAccent,
+                                width: blockHeight * 3,
+                                alignment: Alignment.center,
+                                child: Transform(
+                                  alignment: Alignment.center,
+                                  transform: Matrix4.rotationY(math.pi),
+                                  child: ImageIcon(
+                                    AssetImage(
+                                      "assets/icont.png",
+                                    ),
+                                    color: Colors.red,
+                                  ),
+                                )),
                             Container(
                               // color: Colors.greenAccent,
                               width: blockHeight * 10,
@@ -131,13 +140,14 @@ class _LandingPageState extends State<LandingPage> {
                         alignment: Alignment.topLeft,
                         child: AutoSizeText(
                           "Why is the distance measured in the spped of light in space?",
-                          style: TextStyle(fontSize: 18),
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.bold),
                           minFontSize: 15,
                         ),
                       ),
                       Container(
                         // color: Colors.red,
-                        height: blockHeight * 10,
+                        height: blockHeight * 6,
                         alignment: Alignment.centerLeft,
                         child: Container(
                           // color: Colors.blue,
@@ -174,9 +184,16 @@ class _LandingPageState extends State<LandingPage> {
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
-                                            child: Icon(Icons.arrow_upward),
+                                            child: Icon(
+                                              Icons.arrow_upward,
+                                              size: blockHeight * 2,
+                                            ),
                                           ),
-                                          Expanded(child: AutoSizeText("117"))
+                                          Expanded(
+                                              child: AutoSizeText(
+                                            "117",
+                                            style: TextStyle(fontSize: 12),
+                                          ))
                                         ],
                                       ),
                                     )),
@@ -187,9 +204,16 @@ class _LandingPageState extends State<LandingPage> {
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
-                                            child: Icon(Icons.message),
+                                            child: Icon(
+                                              Icons.message,
+                                              size: blockHeight * 2,
+                                            ),
                                           ),
-                                          Expanded(child: AutoSizeText("10"))
+                                          Expanded(
+                                              child: AutoSizeText(
+                                            "10",
+                                            style: TextStyle(fontSize: 12),
+                                          ))
                                         ],
                                       ),
                                     )),
@@ -200,9 +224,16 @@ class _LandingPageState extends State<LandingPage> {
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
-                                            child: Icon(Icons.share),
+                                            child: Icon(
+                                              Icons.share,
+                                              size: blockHeight * 2,
+                                            ),
                                           ),
-                                          Expanded(child: AutoSizeText("218"))
+                                          Expanded(
+                                              child: AutoSizeText(
+                                            "218",
+                                            style: TextStyle(fontSize: 12),
+                                          ))
                                         ],
                                       ),
                                     ))
@@ -238,11 +269,19 @@ class _LandingPageState extends State<LandingPage> {
                         child: Row(
                           children: <Widget>[
                             Container(
-                              // color: Colors.yellowAccent,
-                              width: blockHeight * 3,
-                              alignment: Alignment.center,
-                              child: ImageIcon(AssetImage("assets/icont.png")),
-                            ),
+                                // color: Colors.yellowAccent,
+                                width: blockHeight * 3,
+                                alignment: Alignment.center,
+                                child: Transform(
+                                  alignment: Alignment.center,
+                                  transform: Matrix4.rotationY(math.pi),
+                                  child: ImageIcon(
+                                    AssetImage(
+                                      "assets/icont.png",
+                                    ),
+                                    color: Colors.red,
+                                  ),
+                                )),
                             Container(
                               // color: Colors.greenAccent,
                               width: blockHeight * 10,
@@ -263,13 +302,14 @@ class _LandingPageState extends State<LandingPage> {
                         alignment: Alignment.topLeft,
                         child: AutoSizeText(
                           "Why is the distance measured in the spped of light in space?",
-                          style: TextStyle(fontSize: 18),
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.bold),
                           minFontSize: 15,
                         ),
                       ),
                       Container(
                         // color: Colors.red,
-                        height: blockHeight * 10,
+                        height: blockHeight * 6,
                         alignment: Alignment.centerLeft,
                         child: Container(
                           // color: Colors.blue,
@@ -306,9 +346,16 @@ class _LandingPageState extends State<LandingPage> {
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
-                                            child: Icon(Icons.arrow_upward),
+                                            child: Icon(
+                                              Icons.arrow_upward,
+                                              size: blockHeight * 2,
+                                            ),
                                           ),
-                                          Expanded(child: AutoSizeText("117"))
+                                          Expanded(
+                                              child: AutoSizeText(
+                                            "117",
+                                            style: TextStyle(fontSize: 12),
+                                          ))
                                         ],
                                       ),
                                     )),
@@ -319,9 +366,16 @@ class _LandingPageState extends State<LandingPage> {
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
-                                            child: Icon(Icons.message),
+                                            child: Icon(
+                                              Icons.message,
+                                              size: blockHeight * 2,
+                                            ),
                                           ),
-                                          Expanded(child: AutoSizeText("10"))
+                                          Expanded(
+                                              child: AutoSizeText(
+                                            "10",
+                                            style: TextStyle(fontSize: 12),
+                                          ))
                                         ],
                                       ),
                                     )),
@@ -332,9 +386,16 @@ class _LandingPageState extends State<LandingPage> {
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
-                                            child: Icon(Icons.share),
+                                            child: Icon(
+                                              Icons.share,
+                                              size: blockHeight * 2,
+                                            ),
                                           ),
-                                          Expanded(child: AutoSizeText("218"))
+                                          Expanded(
+                                              child: AutoSizeText(
+                                            "218",
+                                            style: TextStyle(fontSize: 12),
+                                          ))
                                         ],
                                       ),
                                     ))
@@ -370,11 +431,19 @@ class _LandingPageState extends State<LandingPage> {
                         child: Row(
                           children: <Widget>[
                             Container(
-                              // color: Colors.yellowAccent,
-                              width: blockHeight * 3,
-                              alignment: Alignment.center,
-                              child: ImageIcon(AssetImage("assets/icont.png")),
-                            ),
+                                // color: Colors.yellowAccent,
+                                width: blockHeight * 3,
+                                alignment: Alignment.center,
+                                child: Transform(
+                                  alignment: Alignment.center,
+                                  transform: Matrix4.rotationY(math.pi),
+                                  child: ImageIcon(
+                                    AssetImage(
+                                      "assets/icont.png",
+                                    ),
+                                    color: Colors.red,
+                                  ),
+                                )),
                             Container(
                               // color: Colors.greenAccent,
                               width: blockHeight * 10,
@@ -395,13 +464,14 @@ class _LandingPageState extends State<LandingPage> {
                         alignment: Alignment.topLeft,
                         child: AutoSizeText(
                           "Why is the distance measured in the spped of light in space?",
-                          style: TextStyle(fontSize: 18),
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.bold),
                           minFontSize: 15,
                         ),
                       ),
                       Container(
                         // color: Colors.red,
-                        height: blockHeight * 10,
+                        height: blockHeight * 6,
                         alignment: Alignment.centerLeft,
                         child: Container(
                           // color: Colors.blue,
@@ -438,9 +508,16 @@ class _LandingPageState extends State<LandingPage> {
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
-                                            child: Icon(Icons.arrow_upward),
+                                            child: Icon(
+                                              Icons.arrow_upward,
+                                              size: blockHeight * 2,
+                                            ),
                                           ),
-                                          Expanded(child: AutoSizeText("117"))
+                                          Expanded(
+                                              child: AutoSizeText(
+                                            "117",
+                                            style: TextStyle(fontSize: 12),
+                                          ))
                                         ],
                                       ),
                                     )),
@@ -451,9 +528,16 @@ class _LandingPageState extends State<LandingPage> {
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
-                                            child: Icon(Icons.message),
+                                            child: Icon(
+                                              Icons.message,
+                                              size: blockHeight * 2,
+                                            ),
                                           ),
-                                          Expanded(child: AutoSizeText("10"))
+                                          Expanded(
+                                              child: AutoSizeText(
+                                            "10",
+                                            style: TextStyle(fontSize: 12),
+                                          ))
                                         ],
                                       ),
                                     )),
@@ -464,9 +548,16 @@ class _LandingPageState extends State<LandingPage> {
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
-                                            child: Icon(Icons.share),
+                                            child: Icon(
+                                              Icons.share,
+                                              size: blockHeight * 2,
+                                            ),
                                           ),
-                                          Expanded(child: AutoSizeText("218"))
+                                          Expanded(
+                                              child: AutoSizeText(
+                                            "218",
+                                            style: TextStyle(fontSize: 12),
+                                          ))
                                         ],
                                       ),
                                     ))
@@ -502,11 +593,19 @@ class _LandingPageState extends State<LandingPage> {
                         child: Row(
                           children: <Widget>[
                             Container(
-                              // color: Colors.yellowAccent,
-                              width: blockHeight * 3,
-                              alignment: Alignment.center,
-                              child: ImageIcon(AssetImage("assets/icont.png")),
-                            ),
+                                // color: Colors.yellowAccent,
+                                width: blockHeight * 3,
+                                alignment: Alignment.center,
+                                child: Transform(
+                                  alignment: Alignment.center,
+                                  transform: Matrix4.rotationY(math.pi),
+                                  child: ImageIcon(
+                                    AssetImage(
+                                      "assets/icont.png",
+                                    ),
+                                    color: Colors.red,
+                                  ),
+                                )),
                             Container(
                               // color: Colors.greenAccent,
                               width: blockHeight * 10,
@@ -527,13 +626,14 @@ class _LandingPageState extends State<LandingPage> {
                         alignment: Alignment.topLeft,
                         child: AutoSizeText(
                           "Why is the distance measured in the spped of light in space?",
-                          style: TextStyle(fontSize: 18),
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.bold),
                           minFontSize: 15,
                         ),
                       ),
                       Container(
                         // color: Colors.red,
-                        height: blockHeight * 10,
+                        height: blockHeight * 6,
                         alignment: Alignment.centerLeft,
                         child: Container(
                           // color: Colors.blue,
@@ -570,9 +670,16 @@ class _LandingPageState extends State<LandingPage> {
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
-                                            child: Icon(Icons.arrow_upward),
+                                            child: Icon(
+                                              Icons.arrow_upward,
+                                              size: blockHeight * 2,
+                                            ),
                                           ),
-                                          Expanded(child: AutoSizeText("117"))
+                                          Expanded(
+                                              child: AutoSizeText(
+                                            "117",
+                                            style: TextStyle(fontSize: 12),
+                                          ))
                                         ],
                                       ),
                                     )),
@@ -583,9 +690,16 @@ class _LandingPageState extends State<LandingPage> {
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
-                                            child: Icon(Icons.message),
+                                            child: Icon(
+                                              Icons.message,
+                                              size: blockHeight * 2,
+                                            ),
                                           ),
-                                          Expanded(child: AutoSizeText("10"))
+                                          Expanded(
+                                              child: AutoSizeText(
+                                            "10",
+                                            style: TextStyle(fontSize: 12),
+                                          ))
                                         ],
                                       ),
                                     )),
@@ -596,9 +710,16 @@ class _LandingPageState extends State<LandingPage> {
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
-                                            child: Icon(Icons.share),
+                                            child: Icon(
+                                              Icons.share,
+                                              size: blockHeight * 2,
+                                            ),
                                           ),
-                                          Expanded(child: AutoSizeText("218"))
+                                          Expanded(
+                                              child: AutoSizeText(
+                                            "218",
+                                            style: TextStyle(fontSize: 12),
+                                          ))
                                         ],
                                       ),
                                     ))
@@ -637,25 +758,33 @@ class _LandingPageState extends State<LandingPage> {
 
           decoration: BoxDecoration(
               // border: Border.all(color: Colors.grey, width: blockHeight / 2)
-              color: Colors.grey),
+              // color: Colors.grey
+              ),
+          alignment: Alignment.center,
+          child: Image.asset("assets/vir.jpg"),
         ),
         Container(
           // color: Colors.yellow,
           margin: EdgeInsets.symmetric(horizontal: 5),
           height: blockHeight * 10,
           width: blockHeight * 10,
+          alignment: Alignment.center,
+          child: Image.asset("assets/virat.jpg"),
 
           decoration: BoxDecoration(
               // color: Colors.yellow,
 
               // border: Border.all(color: Colors.grey, width: blockHeight / 2)
-              color: Colors.grey),
+              // color: Colors.grey
+              ),
         ),
         Container(
           // color: Colors.yellow,
           margin: EdgeInsets.symmetric(horizontal: 5),
           height: blockHeight * 10,
           width: blockHeight * 10,
+          alignment: Alignment.center,
+          child: Image.asset("assets/virat.jpeg"),
 
           decoration: BoxDecoration(
               // border: Border.all(color: Colors.grey, width: blockHeight / 2)
@@ -666,20 +795,26 @@ class _LandingPageState extends State<LandingPage> {
           margin: EdgeInsets.symmetric(horizontal: 5),
           height: blockHeight * 10,
           width: blockHeight * 10,
+          alignment: Alignment.center,
+          child: Image.asset("assets/vir.jpg"),
 
           decoration: BoxDecoration(
               // border: Border.all(color: Colors.grey, width: blockHeight / 2)
-              color: Colors.grey),
+              // color: Colors.grey
+              ),
         ),
         Container(
           // color: Colors.yellow,
           margin: EdgeInsets.symmetric(horizontal: 5),
           height: blockHeight * 10,
           width: blockHeight * 10,
+          alignment: Alignment.center,
+          child: Image.asset("assets/virat.jpg"),
 
           decoration: BoxDecoration(
               // border: Border.all(color: Colors.grey, width: blockHeight / 2)
-              color: Colors.grey),
+              // color: Colors.grey
+              ),
         ),
         Container(
           // color: Colors.yellow,
