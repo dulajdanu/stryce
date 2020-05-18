@@ -114,7 +114,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
               child: Row(
                 children: <Widget>[
                   Icon(
-                    FontAwesomeIcons.mapMarkerAlt,
+                    FontAwesomeIcons.graduationCap,
                     color: Colors.red,
                     size: blockHeight * 2.5,
                   ),
@@ -181,7 +181,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                                   AutoSizeText(
                                     "Questions",
                                     style: TextStyle(
-                                        color: Colors.grey, fontSize: 16),
+                                        color: Colors.grey, fontSize: 14),
                                     minFontSize: 12,
                                   )
                                 ],
@@ -200,7 +200,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                                   AutoSizeText(
                                     "Answers",
                                     style: TextStyle(
-                                        color: Colors.grey, fontSize: 16),
+                                        color: Colors.grey, fontSize: 14),
                                     minFontSize: 14,
                                   )
                                 ],
@@ -216,7 +216,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                                   AutoSizeText(
                                     "Interest",
                                     style: TextStyle(
-                                        color: Colors.grey, fontSize: 16),
+                                        color: Colors.grey, fontSize: 14),
                                     minFontSize: 14,
                                   ),
                                   // Text(
@@ -247,7 +247,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                                 child: Text(
                                   "What is the most spontaneous thing you've ever done",
                                   style: TextStyle(
-                                      fontSize: 18, color: Colors.grey),
+                                      fontSize: 16, color: Colors.grey),
                                 ),
                               )
                             ],
@@ -259,7 +259,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                           child: Column(
                             children: <Widget>[
                               Container(
-                                  height: blockHeight * 15,
+                                  // height: blockHeight * 15,
                                   // height: blockHeight,
                                   decoration: BoxDecoration(
                                       // color: Colors.yellow,
@@ -290,19 +290,19 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                                       //   ),
                                       // ),
                                       Container(
-                                        height: blockHeight * 10,
+                                        // height: blockHeight * 10,
                                         child: Column(
                                           children: <Widget>[
                                             Text(
                                               "Q. What is the impact of private CSR on the country",
                                               style: TextStyle(
-                                                  fontSize: 18,
+                                                  fontSize: 16,
                                                   color: Colors.grey),
                                             ),
                                             Text(
                                               "A. The benefit of private firms  ",
                                               style: TextStyle(
-                                                  fontSize: 18,
+                                                  fontSize: 16,
                                                   color: Colors.grey),
                                             ),
                                           ],
@@ -486,26 +486,42 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
           // height: blockHeight * 10,
           width: blockHeight * 30,
           alignment: Alignment.center,
-          child: Image.asset("assets/virat.jpeg"),
 
           decoration: BoxDecoration(
-              border: Border.all(color: Colors.grey, width: blockHeight / 2)),
+            image: DecorationImage(
+                matchTextDirection: true,
+                // fit: BoxFit.cover,
+                alignment: Alignment.center,
+                repeat: ImageRepeat.noRepeat,
+                image: AssetImage(
+                  "assets/virat.jpg",
+                )),
+            // color: Colors.yellow,
+            borderRadius: BorderRadius.circular(20),
+            // border: Border.all(color: Colors.grey, width: blockHeight / 2)
+          ),
         ),
         Container(
           // color: Colors.yellow,
           margin: EdgeInsets.symmetric(horizontal: 5),
           // height: blockHeight * 10,
+
           width: blockHeight * 30,
           alignment: Alignment.center,
-          child: Image.asset(
-            "assets/virat.jpg",
-            fit: BoxFit.cover,
+
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                matchTextDirection: true,
+                // fit: BoxFit.cover,
+                alignment: Alignment.center,
+                repeat: ImageRepeat.noRepeat,
+                image: AssetImage(
+                  "assets/virat.jpg",
+                )),
+            // color: Colors.yellow,
+            borderRadius: BorderRadius.circular(20),
+            // border: Border.all(color: Colors.grey, width: blockHeight / 2)
           ),
-
-          decoration: BoxDecoration(
-              // color: Colors.yellow,
-
-              border: Border.all(color: Colors.grey, width: blockHeight / 2)),
         ),
         Container(
           // color: Colors.yellow,
@@ -514,34 +530,18 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
           width: blockHeight * 30,
 
           decoration: BoxDecoration(
-              border: Border.all(color: Colors.grey, width: blockHeight / 2)),
-        ),
-        Container(
-          // color: Colors.yellow,
-          margin: EdgeInsets.symmetric(horizontal: 5),
-          // height: blockHeight * 10,
-          width: blockHeight * 30,
-
-          decoration: BoxDecoration(
-              border: Border.all(color: Colors.grey, width: blockHeight / 2)),
-        ),
-        Container(
-          // color: Colors.yellow,
-          margin: EdgeInsets.symmetric(horizontal: 5),
-          // height: blockHeight * 10,
-          width: blockHeight * 30,
-
-          decoration: BoxDecoration(
-              border: Border.all(color: Colors.grey, width: blockHeight / 2)),
-        ),
-        Container(
-          // color: Colors.yellow,
-          margin: EdgeInsets.symmetric(horizontal: 5),
-          // height: blockHeight * 10,
-          width: blockHeight * 30,
-
-          decoration: BoxDecoration(
-              border: Border.all(color: Colors.grey, width: blockHeight / 2)),
+            image: DecorationImage(
+                matchTextDirection: true,
+                // fit: BoxFit.cover,
+                alignment: Alignment.center,
+                repeat: ImageRepeat.noRepeat,
+                image: AssetImage(
+                  "assets/virat.jpg",
+                )),
+            // color: Colors.yellow,
+            borderRadius: BorderRadius.circular(20),
+            // border: Border.all(color: Colors.grey, width: blockHeight / 2)
+          ),
         ),
       ],
     );

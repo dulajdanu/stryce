@@ -93,6 +93,7 @@ class _LandingPageState extends State<LandingPage> {
               Card(
                 margin: EdgeInsets.symmetric(horizontal: margin / 2),
                 child: Container(
+                  // color: Colors.red,
                   padding: EdgeInsets.all(blockHeight),
                   margin: EdgeInsets.symmetric(horizontal: margin / 2),
                   // decoration: BoxDecoration(
@@ -151,14 +152,22 @@ class _LandingPageState extends State<LandingPage> {
                         alignment: Alignment.centerLeft,
                         child: Container(
                           // color: Colors.blue,
-                          height: blockHeight * 8,
+                          height: blockHeight * 5,
                           alignment: Alignment.topLeft,
                           child: Row(
                             children: <Widget>[
                               Container(
                                 decoration: BoxDecoration(
-                                    color: Colors.grey, shape: BoxShape.circle),
-                                width: blockHeight * 8,
+                                    image: DecorationImage(
+                                      alignment: Alignment.center,
+                                      matchTextDirection: true,
+                                      repeat: ImageRepeat.noRepeat,
+                                      image: AssetImage("assets/virat.jpg"),
+                                    ),
+                                    color: Colors.grey,
+                                    shape: BoxShape.circle),
+                                width: blockHeight * 5,
+                                height: blockHeight * 5,
                               ),
                               Expanded(
                                   // flex: 2,
@@ -169,6 +178,7 @@ class _LandingPageState extends State<LandingPage> {
                                 child: AutoSizeText(
                                   "Nreekay,Phd-Ruckers University\n\'Birds of the same feeather flock together\'",
                                   // style: TextStyle(fontSize: 10),
+                                  style: TextStyle(fontSize: 8),
                                 ),
                               )),
                               Expanded(
@@ -255,6 +265,7 @@ class _LandingPageState extends State<LandingPage> {
               Card(
                 margin: EdgeInsets.symmetric(horizontal: margin / 2),
                 child: Container(
+                  // color: Colors.red,
                   padding: EdgeInsets.all(blockHeight),
                   margin: EdgeInsets.symmetric(horizontal: margin / 2),
                   // decoration: BoxDecoration(
@@ -313,14 +324,22 @@ class _LandingPageState extends State<LandingPage> {
                         alignment: Alignment.centerLeft,
                         child: Container(
                           // color: Colors.blue,
-                          height: blockHeight * 8,
+                          height: blockHeight * 5,
                           alignment: Alignment.topLeft,
                           child: Row(
                             children: <Widget>[
                               Container(
                                 decoration: BoxDecoration(
-                                    color: Colors.grey, shape: BoxShape.circle),
-                                width: blockHeight * 8,
+                                    image: DecorationImage(
+                                      alignment: Alignment.center,
+                                      matchTextDirection: true,
+                                      repeat: ImageRepeat.noRepeat,
+                                      image: AssetImage("assets/virat.jpg"),
+                                    ),
+                                    color: Colors.grey,
+                                    shape: BoxShape.circle),
+                                width: blockHeight * 5,
+                                height: blockHeight * 5,
                               ),
                               Expanded(
                                   // flex: 2,
@@ -331,6 +350,7 @@ class _LandingPageState extends State<LandingPage> {
                                 child: AutoSizeText(
                                   "Nreekay,Phd-Ruckers University\n\'Birds of the same feeather flock together\'",
                                   // style: TextStyle(fontSize: 10),
+                                  style: TextStyle(fontSize: 8),
                                 ),
                               )),
                               Expanded(
@@ -417,6 +437,7 @@ class _LandingPageState extends State<LandingPage> {
               Card(
                 margin: EdgeInsets.symmetric(horizontal: margin / 2),
                 child: Container(
+                  // color: Colors.red,
                   padding: EdgeInsets.all(blockHeight),
                   margin: EdgeInsets.symmetric(horizontal: margin / 2),
                   // decoration: BoxDecoration(
@@ -475,14 +496,22 @@ class _LandingPageState extends State<LandingPage> {
                         alignment: Alignment.centerLeft,
                         child: Container(
                           // color: Colors.blue,
-                          height: blockHeight * 8,
+                          height: blockHeight * 5,
                           alignment: Alignment.topLeft,
                           child: Row(
                             children: <Widget>[
                               Container(
                                 decoration: BoxDecoration(
-                                    color: Colors.grey, shape: BoxShape.circle),
-                                width: blockHeight * 8,
+                                    image: DecorationImage(
+                                      alignment: Alignment.center,
+                                      matchTextDirection: true,
+                                      repeat: ImageRepeat.noRepeat,
+                                      image: AssetImage("assets/virat.jpg"),
+                                    ),
+                                    color: Colors.grey,
+                                    shape: BoxShape.circle),
+                                width: blockHeight * 5,
+                                height: blockHeight * 5,
                               ),
                               Expanded(
                                   // flex: 2,
@@ -493,6 +522,7 @@ class _LandingPageState extends State<LandingPage> {
                                 child: AutoSizeText(
                                   "Nreekay,Phd-Ruckers University\n\'Birds of the same feeather flock together\'",
                                   // style: TextStyle(fontSize: 10),
+                                  style: TextStyle(fontSize: 8),
                                 ),
                               )),
                               Expanded(
@@ -579,6 +609,7 @@ class _LandingPageState extends State<LandingPage> {
               Card(
                 margin: EdgeInsets.symmetric(horizontal: margin / 2),
                 child: Container(
+                  // color: Colors.red,
                   padding: EdgeInsets.all(blockHeight),
                   margin: EdgeInsets.symmetric(horizontal: margin / 2),
                   // decoration: BoxDecoration(
@@ -637,14 +668,22 @@ class _LandingPageState extends State<LandingPage> {
                         alignment: Alignment.centerLeft,
                         child: Container(
                           // color: Colors.blue,
-                          height: blockHeight * 8,
+                          height: blockHeight * 5,
                           alignment: Alignment.topLeft,
                           child: Row(
                             children: <Widget>[
                               Container(
                                 decoration: BoxDecoration(
-                                    color: Colors.grey, shape: BoxShape.circle),
-                                width: blockHeight * 8,
+                                    image: DecorationImage(
+                                      alignment: Alignment.center,
+                                      matchTextDirection: true,
+                                      repeat: ImageRepeat.noRepeat,
+                                      image: AssetImage("assets/virat.jpg"),
+                                    ),
+                                    color: Colors.grey,
+                                    shape: BoxShape.circle),
+                                width: blockHeight * 5,
+                                height: blockHeight * 5,
                               ),
                               Expanded(
                                   // flex: 2,
@@ -655,6 +694,7 @@ class _LandingPageState extends State<LandingPage> {
                                 child: AutoSizeText(
                                   "Nreekay,Phd-Ruckers University\n\'Birds of the same feeather flock together\'",
                                   // style: TextStyle(fontSize: 10),
+                                  style: TextStyle(fontSize: 8),
                                 ),
                               )),
                               Expanded(
@@ -757,11 +797,15 @@ class _LandingPageState extends State<LandingPage> {
           width: blockHeight * 10,
 
           decoration: BoxDecoration(
-              // border: Border.all(color: Colors.grey, width: blockHeight / 2)
-              // color: Colors.grey
-              ),
+              borderRadius: BorderRadius.circular(20),
+              image: DecorationImage(
+                alignment: Alignment.center,
+                matchTextDirection: true,
+                repeat: ImageRepeat.noRepeat,
+                image: AssetImage("assets/virat.jpg"),
+              )),
           alignment: Alignment.center,
-          child: Image.asset("assets/vir.jpg"),
+          // child: Image.asset("assets/vir.jpg"),
         ),
         Container(
           // color: Colors.yellow,
@@ -769,14 +813,16 @@ class _LandingPageState extends State<LandingPage> {
           height: blockHeight * 10,
           width: blockHeight * 10,
           alignment: Alignment.center,
-          child: Image.asset("assets/virat.jpg"),
+          // child: Image.asset("assets/virat.jpg"),
 
           decoration: BoxDecoration(
-              // color: Colors.yellow,
-
-              // border: Border.all(color: Colors.grey, width: blockHeight / 2)
-              // color: Colors.grey
-              ),
+              borderRadius: BorderRadius.circular(20),
+              image: DecorationImage(
+                alignment: Alignment.center,
+                matchTextDirection: true,
+                repeat: ImageRepeat.noRepeat,
+                image: AssetImage("assets/virat.jpg"),
+              )),
         ),
         Container(
           // color: Colors.yellow,
@@ -784,11 +830,16 @@ class _LandingPageState extends State<LandingPage> {
           height: blockHeight * 10,
           width: blockHeight * 10,
           alignment: Alignment.center,
-          child: Image.asset("assets/virat.jpeg"),
+          // child: Image.asset("assets/virat.jpeg"),
 
           decoration: BoxDecoration(
-              // border: Border.all(color: Colors.grey, width: blockHeight / 2)
-              color: Colors.grey),
+              borderRadius: BorderRadius.circular(20),
+              image: DecorationImage(
+                alignment: Alignment.center,
+                matchTextDirection: true,
+                repeat: ImageRepeat.noRepeat,
+                image: AssetImage("assets/virat.jpg"),
+              )),
         ),
         Container(
           // color: Colors.yellow,
@@ -796,12 +847,16 @@ class _LandingPageState extends State<LandingPage> {
           height: blockHeight * 10,
           width: blockHeight * 10,
           alignment: Alignment.center,
-          child: Image.asset("assets/vir.jpg"),
+          // child: Image.asset("assets/vir.jpg"),
 
           decoration: BoxDecoration(
-              // border: Border.all(color: Colors.grey, width: blockHeight / 2)
-              // color: Colors.grey
-              ),
+              borderRadius: BorderRadius.circular(20),
+              image: DecorationImage(
+                alignment: Alignment.center,
+                matchTextDirection: true,
+                repeat: ImageRepeat.noRepeat,
+                image: AssetImage("assets/virat.jpg"),
+              )),
         ),
         Container(
           // color: Colors.yellow,
@@ -809,12 +864,16 @@ class _LandingPageState extends State<LandingPage> {
           height: blockHeight * 10,
           width: blockHeight * 10,
           alignment: Alignment.center,
-          child: Image.asset("assets/virat.jpg"),
+          // child: Image.asset("assets/virat.jpg"),
 
           decoration: BoxDecoration(
-              // border: Border.all(color: Colors.grey, width: blockHeight / 2)
-              // color: Colors.grey
-              ),
+              borderRadius: BorderRadius.circular(20),
+              image: DecorationImage(
+                alignment: Alignment.center,
+                matchTextDirection: true,
+                repeat: ImageRepeat.noRepeat,
+                image: AssetImage("assets/virat.jpg"),
+              )),
         ),
         Container(
           // color: Colors.yellow,
