@@ -2,10 +2,10 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
-import 'package:stryce/sizeConfig.dart';
+import 'package:buddieU/sizeConfig.dart';
 import 'package:intl/intl.dart';
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
-import 'package:stryce/views/PickAreasOfinterest.dart';
+import 'package:buddieU/views/PickAreasOfinterest.dart';
 
 class ProfileInfo extends StatefulWidget {
   ProfileInfo({Key key}) : super(key: key);

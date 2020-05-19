@@ -1,6 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:stryce/sizeConfig.dart';
+import 'package:buddieU/sizeConfig.dart';
 
 class ChatPage extends StatefulWidget {
   ChatPage({Key key}) : super(key: key);

@@ -1,5 +1,5 @@
-name: stryce
-description: stryce app
+name: buddieU
+description: buddieU app
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -30,6 +30,7 @@ dependencies:
 
 
 
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
@@ -37,6 +38,13 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.7.5
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo2.png"
+
 
 
 # For information on the generic Dart part of this file, see the

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:stryce/sizeConfig.dart';
-import 'package:stryce/views/ChatPage.dart';
-import 'package:stryce/views/LandingPage.dart';
-import 'package:stryce/views/MessagesView.dart';
-import 'package:stryce/views/ProfileSignUpAbout.dart';
+import 'package:buddieU/sizeConfig.dart';
+import 'package:buddieU/views/ChatPage.dart';
+import 'package:buddieU/views/LandingPage.dart';
+import 'package:buddieU/views/MessagesView.dart';
+import 'package:buddieU/views/ProfileSignUpAbout.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -54,8 +54,23 @@ class _HomePageState extends State<HomePage> {
         selectedIconTheme: IconThemeData(color: Colors.grey),
         // selectedLabelStyle: TextStyle(color: Colors.grey),
         // iconSize: 10,
-        items: const <BottomNavigationBarItem>[
+        items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
+            // activeIcon: ShaderMask(
+            //   shaderCallback: (Rect bounds) {
+            //     return RadialGradient(
+            //       center: Alignment.topLeft,
+            //       radius: 1.0,
+            //       colors: <Color>[
+            //         Color(0xffec375c),
+            //         Color(0xfff46163),
+            //         Color(0xfff98467)
+            //       ],
+            //       tileMode: TileMode.mirror,
+            //     ).createShader(bounds);
+            //   },
+            //   child: Icon(Icons.notifications),
+            // ),
             icon: Icon(FontAwesomeIcons.alignJustify),
             title: Text('Profile'),
           ),
@@ -64,7 +79,15 @@ class _HomePageState extends State<HomePage> {
             title: Text("Inbox"),
           ),
           BottomNavigationBarItem(
-            icon: ImageIcon(AssetImage("assets/logo2.png")),
+            icon: Image(
+              image: AssetImage(
+                "assets/logo2.png",
+              ),
+              color: null,
+              fit: BoxFit.scaleDown,
+              height: blockHeight * 5,
+              width: blockHeight * 5,
+            ),
             title: Text('Home'),
           ),
           BottomNavigationBarItem(

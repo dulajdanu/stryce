@@ -1,7 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:stryce/sizeConfig.dart';
+import 'package:buddieU/sizeConfig.dart';
 
 class MesaagesView extends StatefulWidget {
   MesaagesView({Key key}) : super(key: key);
@@ -50,7 +50,7 @@ class _MesaagesViewState extends State<MesaagesView> {
                           // color: Colors.redAccent,
                           alignment: Alignment.centerLeft,
                           child: AutoSizeText(
-                            "BuddiesU",
+                            "buddieU",
                             style: GoogleFonts.montserrat(fontSize: 20),
                             minFontSize: 15,
                           ),

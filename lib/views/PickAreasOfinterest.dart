@@ -1,8 +1,8 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:stryce/views/Home.dart';
-import 'package:stryce/views/ProfileSignUpAbout.dart';
+import 'package:buddieU/views/Home.dart';
+import 'package:buddieU/views/ProfileSignUpAbout.dart';
 
 import '../sizeConfig.dart';
 

@@ -2,7 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:stryce/sizeConfig.dart';
+import 'package:buddieU/sizeConfig.dart';
 
 class ProfileSignUp extends StatefulWidget {
   ProfileSignUp({Key key}) : super(key: key);
@@ -54,7 +54,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                         // color: Colors.redAccent,
                         alignment: Alignment.centerLeft,
                         child: AutoSizeText(
-                          "BuddiesU",
+                          "buddieU",
                           style: GoogleFonts.montserrat(fontSize: 20),
                           minFontSize: 15,
                         ),

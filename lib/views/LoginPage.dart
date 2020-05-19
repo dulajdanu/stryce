@@ -2,7 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:stryce/views/AddVerificationCode.dart';
+import 'package:buddieU/views/AddVerificationCode.dart';
 
 import '../sizeConfig.dart';
 
@@ -60,7 +60,7 @@ class _LoginPageState extends State<LoginPage> {
                                 // color: Colors.redAccent,
                                 alignment: Alignment.centerLeft,
                                 child: AutoSizeText(
-                                  "BuddiesU",
+                                  "buddieU",
                                   style: GoogleFonts.montserrat(fontSize: 40),
                                   minFontSize: 25,
                                 ),
@@ -317,7 +317,7 @@ class _LoginPageState extends State<LoginPage> {
                                   // color: Colors.red,
                                   alignment: Alignment.topCenter,
                                   child: Text(
-                                    "I agree to buddiesu terms of servcie & privacy policies",
+                                    "I agree to buddieU terms of servcie & privacy policies",
                                     style: TextStyle(
                                       fontSize: 12,
                                     ),

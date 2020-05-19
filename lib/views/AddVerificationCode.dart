@@ -1,7 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:stryce/views/PutImage.dart';
+import 'package:buddieU/views/PutImage.dart';
 
 import '../sizeConfig.dart';
 
@@ -58,7 +58,7 @@ class _AddVerificationCodeState extends State<AddVerificationCode> {
                               // color: Colors.redAccent,
                               alignment: Alignment.centerLeft,
                               child: AutoSizeText(
-                                "BuddiesU",
+                                "buddieU",
                                 style: GoogleFonts.montserrat(fontSize: 40),
                                 minFontSize: 25,
                               ),
@@ -205,7 +205,7 @@ class _AddVerificationCodeState extends State<AddVerificationCode> {
                 height: blockHeight * 3,
                 alignment: Alignment.center,
                 child: Text(
-                  "I agree to buddiesu terms of servcie & privacy policies",
+                  "I agree to buddieU terms of servcie & privacy policies",
                   style: TextStyle(
                     fontSize: 14,
                   ),
