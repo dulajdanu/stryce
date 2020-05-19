@@ -50,7 +50,7 @@ class _MesaagesViewState extends State<MesaagesView> {
                           // color: Colors.redAccent,
                           alignment: Alignment.centerLeft,
                           child: AutoSizeText(
-                            "buddieU",
+                            "BuddieU",
                             style: GoogleFonts.montserrat(fontSize: 20),
                             minFontSize: 15,
                           ),

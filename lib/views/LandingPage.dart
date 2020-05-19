@@ -62,7 +62,7 @@ class _LandingPageState extends State<LandingPage> {
                               // color: Colors.blue,
                               alignment: Alignment.centerLeft,
                               child: AutoSizeText(
-                                "buddieU",
+                                "BuddieU",
                                 style: GoogleFonts.montserrat(fontSize: 20),
                                 minFontSize: 15,
                               ),

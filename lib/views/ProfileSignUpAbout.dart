@@ -54,7 +54,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                         // color: Colors.redAccent,
                         alignment: Alignment.centerLeft,
                         child: AutoSizeText(
-                          "buddieU",
+                          "BuddieU",
                           style: GoogleFonts.montserrat(fontSize: 20),
                           minFontSize: 15,
                         ),
@@ -64,13 +64,13 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                 ),
               ),
             ),
-            Container(
-              // color: Colors.blue,
-              height: blockHeight * 2,
-            ),
+            // Container(
+            //   // color: Colors.blue,
+            //   height: blockHeight * 2,
+            // ),
             Container(
               margin: EdgeInsets.only(left: margin, top: margin / 5),
-              height: blockHeight * 30,
+              height: blockHeight * 45,
               // padding: EdgeInsets.all(blockHeight),
               // color: Colors.red,
               alignment: Alignment.centerLeft,
@@ -535,7 +535,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
           // color: Colors.yellow,
           margin: EdgeInsets.symmetric(horizontal: 5),
           // height: blockHeight * 10,
-          width: blockHeight * 30,
+          width: blockHeight * 45,
           alignment: Alignment.center,
 
           decoration: BoxDecoration(
@@ -557,7 +557,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
           margin: EdgeInsets.symmetric(horizontal: 5),
           // height: blockHeight * 10,
 
-          width: blockHeight * 30,
+          width: blockHeight * 45,
           alignment: Alignment.center,
 
           decoration: BoxDecoration(
@@ -578,7 +578,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
           // color: Colors.yellow,
           margin: EdgeInsets.symmetric(horizontal: 5),
           // height: blockHeight * 10,
-          width: blockHeight * 30,
+          width: blockHeight * 45,
 
           decoration: BoxDecoration(
             image: DecorationImage(

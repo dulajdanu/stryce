@@ -58,7 +58,7 @@ class _AddVerificationCodeState extends State<AddVerificationCode> {
                               // color: Colors.redAccent,
                               alignment: Alignment.centerLeft,
                               child: AutoSizeText(
-                                "buddieU",
+                                "BuddieU",
                                 style: GoogleFonts.montserrat(fontSize: 40),
                                 minFontSize: 25,
                               ),
