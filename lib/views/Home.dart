@@ -22,11 +22,7 @@ class _HomePageState extends State<HomePage> {
     LandingPage(),
     ChatPage(),
     Text(
-      'Index 2: School',
-      // style: optionStyle,
-    ),
-    Text(
-      'Index 2: School',
+      'Index 2: settings',
       // style: optionStyle,
     ),
   ];

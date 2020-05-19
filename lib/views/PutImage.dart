@@ -34,7 +34,7 @@ class _PutYouBestState extends State<PutYouBest> {
               // color: Colors.red,
               alignment: Alignment.center,
               child: Image.asset(
-                "assets/logo2.png",
+                "assets/logoedit2.png",
                 height: blockHeight * 100,
                 width: blockWidth * 100,
                 fit: BoxFit.cover,
@@ -118,7 +118,7 @@ class _PutYouBestState extends State<PutYouBest> {
                       focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(color: Colors.grey, width: 3),
                       ),
-                      hintText: "Name",
+                      hintText: "Enter your name",
                       hintStyle: GoogleFonts.montserrat(
                           fontSize: 20, fontWeight: FontWeight.w500),
                       // border: UnderlineInputBorder(),

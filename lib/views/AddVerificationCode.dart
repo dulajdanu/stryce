@@ -147,53 +147,63 @@ class _AddVerificationCodeState extends State<AddVerificationCode> {
               // color: Colors.grey,
               height: blockHeight * 2,
             ),
-            Container(
-              color: Colors.redAccent,
-              height: blockHeight * 5,
-              width: blockWidth * 40,
-              alignment: Alignment.center,
-              child: SizedBox.expand(
-                child: ButtonTheme(
-                  child: RaisedButton(
-                    color: Colors.grey,
-                    onPressed: () {},
-                    child: AutoSizeText(
-                      "Resend",
-                      style: GoogleFonts.montserrat(fontSize: 20),
-                      minFontSize: 15,
-                    ),
-                  ),
-                ),
-              ),
+            GestureDetector(
+              onTap: () {
+                // Navigator.push(context,
+                // MaterialPageRoute(builder: (context) => ProfileInfo()));
+              },
+              child: Container(
+                  // color: Colors.blue,
+
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      gradient: LinearGradient(colors: [
+                        Color(0xffec375c),
+                        Color(0xfff46163),
+                        Color(0xfff98467)
+                      ])),
+                  height: 5 * blockHeight,
+                  width: blockWidth * 40,
+                  margin: EdgeInsets.symmetric(horizontal: margin),
+                  alignment: Alignment.center,
+                  child: Text(
+                    "RESEND",
+                    style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w500),
+                  )),
             ),
             Container(
               // color: Colors.grey,
               height: blockHeight * 10,
             ),
-            Container(
-              color: Colors.redAccent,
-              height: blockHeight * 5,
-              width: blockWidth * 40,
-              alignment: Alignment.center,
-              child: SizedBox.expand(
-                child: ButtonTheme(
-                  child: RaisedButton(
-                    color: Colors.grey,
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => PutYouBest()));
-                    },
-                    child: AutoSizeText(
-                      "NEXT >",
-                      style: GoogleFonts.montserrat(
-                          fontSize: 20, fontWeight: FontWeight.w500),
-                      minFontSize: 15,
-                    ),
-                  ),
-                ),
-              ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => PutYouBest()));
+              },
+              child: Container(
+                  // color: Colors.blue,
+
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      gradient: LinearGradient(colors: [
+                        Color(0xffec375c),
+                        Color(0xfff46163),
+                        Color(0xfff98467)
+                      ])),
+                  height: 5 * blockHeight,
+                  width: blockWidth * 40,
+                  margin: EdgeInsets.symmetric(horizontal: margin),
+                  alignment: Alignment.center,
+                  child: Text(
+                    "NEXT",
+                    style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w500),
+                  )),
             ),
             Container(
               padding: EdgeInsets.only(bottom: blockHeight * 3),

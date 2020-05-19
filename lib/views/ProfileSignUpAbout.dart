@@ -113,11 +113,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
               alignment: Alignment.topLeft,
               child: Row(
                 children: <Widget>[
-                  Icon(
-                    FontAwesomeIcons.graduationCap,
-                    color: Colors.red,
-                    size: blockHeight * 2.5,
-                  ),
+                  Image(image: AssetImage("assets/Cap.png")),
                   SizedBox(
                     width: blockWidth * 2,
                   ),
@@ -166,7 +162,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                         // color: Colors.green,
                         child: new TabBar(
                           labelPadding: EdgeInsets.all(0),
-                          indicatorColor: Colors.grey,
+                          indicatorColor: Color(0xffec375c),
                           tabs: [
                             Container(
                               height: blockHeight * 6,
@@ -238,16 +234,64 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                             children: <Widget>[
                               Container(
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(20),
-                                    border: Border.all(
-                                        width: blockHeight / 2,
-                                        color: Colors.grey)),
+                                  gradient: LinearGradient(colors: [
+                                    Color(0xffec375c),
+                                    Color(0xfff46163),
+                                    Color(0xfff98467)
+                                  ]),
+                                  borderRadius: BorderRadius.circular(10),
+                                  // border: Border.all(
+                                  //     width: blockHeight / 2,
+                                  //     color: Colors.grey)
+                                ),
                                 padding: EdgeInsets.all(blockHeight),
                                 // color: Colors.red,
                                 child: Text(
                                   "What is the most spontaneous thing you've ever done",
                                   style: TextStyle(
-                                      fontSize: 16, color: Colors.grey),
+                                      fontSize: 16, color: Colors.white),
+                                ),
+                              ),
+                              Container(
+                                margin:
+                                    EdgeInsets.symmetric(vertical: margin / 5),
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(colors: [
+                                    Color(0xffec375c),
+                                    Color(0xfff46163),
+                                    Color(0xfff98467)
+                                  ]),
+                                  borderRadius: BorderRadius.circular(10),
+                                  // border: Border.all(
+                                  //     width: blockHeight / 2,
+                                  //     color: Colors.grey)
+                                ),
+                                padding: EdgeInsets.all(blockHeight),
+                                // color: Colors.red,
+                                child: Text(
+                                  "What is the most spontaneous thing you've ever done",
+                                  style: TextStyle(
+                                      fontSize: 16, color: Colors.white),
+                                ),
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(colors: [
+                                    Color(0xffec375c),
+                                    Color(0xfff46163),
+                                    Color(0xfff98467)
+                                  ]),
+                                  borderRadius: BorderRadius.circular(10),
+                                  // border: Border.all(
+                                  //     width: blockHeight / 2,
+                                  //     color: Colors.grey)
+                                ),
+                                padding: EdgeInsets.all(blockHeight),
+                                // color: Colors.red,
+                                child: Text(
+                                  "What is the most spontaneous thing you've ever done",
+                                  style: TextStyle(
+                                      fontSize: 16, color: Colors.white),
                                 ),
                               )
                             ],
@@ -262,11 +306,18 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                                   // height: blockHeight * 15,
                                   // height: blockHeight,
                                   decoration: BoxDecoration(
-                                      // color: Colors.yellow,
-                                      borderRadius: BorderRadius.circular(20),
-                                      border: Border.all(
-                                          width: blockHeight / 2,
-                                          color: Colors.grey)),
+                                    // color: Colors.yellow,
+                                    gradient: LinearGradient(colors: [
+                                      Color(0xffec375c),
+                                      Color(0xfff46163),
+                                      Color(0xfff98467)
+                                    ]),
+                                    borderRadius: BorderRadius.circular(10),
+                                    // borderRadius: BorderRadius.circular(20),
+                                    // border: Border.all(
+                                    //     width: blockHeight / 2,
+                                    //     color: Colors.grey)
+                                  ),
                                   padding: EdgeInsets.all(blockHeight),
                                   alignment: Alignment.topLeft,
                                   child: Stack(
@@ -297,13 +348,13 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                                               "Q. What is the impact of private CSR on the country",
                                               style: TextStyle(
                                                   fontSize: 16,
-                                                  color: Colors.grey),
+                                                  color: Colors.white),
                                             ),
                                             Text(
                                               "A. The benefit of private firms  ",
                                               style: TextStyle(
                                                   fontSize: 16,
-                                                  color: Colors.grey),
+                                                  color: Colors.white),
                                             ),
                                           ],
                                         ),

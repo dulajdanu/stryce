@@ -34,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
               // color: Colors.red,
               alignment: Alignment.center,
               child: Image.asset(
-                "assets/logo2.png",
+                "assets/logoedit1.png",
                 height: blockHeight * 100,
                 width: blockWidth * 100,
                 fit: BoxFit.cover,
@@ -165,11 +165,11 @@ class _LoginPageState extends State<LoginPage> {
                                           //     Icon(Icons.phone, color: Colors.black),
                                           enabledBorder: UnderlineInputBorder(
                                             borderSide: BorderSide(
-                                                color: Colors.black, width: 3),
+                                                color: Colors.grey, width: 1),
                                           ),
                                           focusedBorder: UnderlineInputBorder(
                                             borderSide: BorderSide(
-                                                color: Colors.black, width: 3),
+                                                color: Colors.grey, width: 1),
                                           ),
                                           contentPadding: EdgeInsets.only(
                                             left: blockHeight * 2,

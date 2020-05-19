@@ -219,44 +219,35 @@ class _PickAreasOfInterestState extends State<PickAreasOfInterest> {
                 ],
               ),
             ),
-            Container(
-              // color: Colors.green,
-              height: blockHeight * 5,
-              margin: EdgeInsets.symmetric(horizontal: margin),
-              alignment: Alignment.topRight,
-              child: Container(
-                // color: Colors.yellow,
-                height: blockHeight * 5,
-                width: blockWidth * 34,
-                alignment: Alignment.topLeft,
-                child: SizedBox.expand(
-                  child: ButtonTheme(
-                    child: RaisedButton(
-                        color: Colors.grey,
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => HomePage()));
-                        },
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: <Widget>[
-                            AutoSizeText(
-                              "Finish",
-                              style:
-                                  TextStyle(fontSize: 20, color: Colors.white),
-                              minFontSize: 15,
-                            ),
-                            Icon(
-                              Icons.arrow_right,
-                              size: blockHeight * 5,
-                              color: Colors.white,
-                            )
-                          ],
-                        )),
-                  ),
-                ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => HomePage()));
+              },
+              child: Align(
+                alignment: Alignment.topRight,
+                child: Container(
+
+                    // color: Colors.blue,
+
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        gradient: LinearGradient(colors: [
+                          Color(0xffec375c),
+                          Color(0xfff46163),
+                          Color(0xfff98467)
+                        ])),
+                    height: 5 * blockHeight,
+                    width: blockWidth * 40,
+                    margin: EdgeInsets.symmetric(horizontal: margin),
+                    alignment: Alignment.center,
+                    child: Text(
+                      "FINISH",
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w500),
+                    )),
               ),
             ),
             Container(

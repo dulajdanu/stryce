@@ -23,11 +23,11 @@ class _LandingPageState extends State<LandingPage> {
       child: Scaffold(
         backgroundColor: Colors.grey[200],
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.white,
           onPressed: () {},
           child: Icon(
             Icons.add,
-            color: Colors.white,
+            color: Color(0xffec375c),
           ),
         ),
         body: SingleChildScrollView(
@@ -176,7 +176,7 @@ class _LandingPageState extends State<LandingPage> {
                                 margin: EdgeInsets.only(left: blockHeight),
                                 alignment: Alignment.centerLeft,
                                 child: AutoSizeText(
-                                  "Nreekay,Phd-Ruckers University\n\'Birds of the same feeather flock together\'",
+                                  "Nreekay,Phd-Ruckers University",
                                   // style: TextStyle(fontSize: 10),
                                   style: TextStyle(fontSize: 8),
                                 ),
@@ -348,7 +348,7 @@ class _LandingPageState extends State<LandingPage> {
                                 margin: EdgeInsets.only(left: blockHeight),
                                 alignment: Alignment.centerLeft,
                                 child: AutoSizeText(
-                                  "Nreekay,Phd-Ruckers University\n\'Birds of the same feeather flock together\'",
+                                  "Nreekay,Phd-Ruckers University",
                                   // style: TextStyle(fontSize: 10),
                                   style: TextStyle(fontSize: 8),
                                 ),
@@ -520,7 +520,7 @@ class _LandingPageState extends State<LandingPage> {
                                 margin: EdgeInsets.only(left: blockHeight),
                                 alignment: Alignment.centerLeft,
                                 child: AutoSizeText(
-                                  "Nreekay,Phd-Ruckers University\n\'Birds of the same feeather flock together\'",
+                                  "Nreekay,Phd-Ruckers University",
                                   // style: TextStyle(fontSize: 10),
                                   style: TextStyle(fontSize: 8),
                                 ),
@@ -692,7 +692,7 @@ class _LandingPageState extends State<LandingPage> {
                                 margin: EdgeInsets.only(left: blockHeight),
                                 alignment: Alignment.centerLeft,
                                 child: AutoSizeText(
-                                  "Nreekay,Phd-Ruckers University\n\'Birds of the same feeather flock together\'",
+                                  "Nreekay,Phd-Ruckers University",
                                   // style: TextStyle(fontSize: 10),
                                   style: TextStyle(fontSize: 8),
                                 ),
