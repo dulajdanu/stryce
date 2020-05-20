@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:buddieU/views/LoginPage.dart';
+import 'package:BuddieU/views/LoginPage.dart';
 
 void main() => runApp(MyApp());
 

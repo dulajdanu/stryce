@@ -2,7 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:buddieU/sizeConfig.dart';
+import 'package:BuddieU/sizeConfig.dart';
 
 class ProfileSignUp extends StatefulWidget {
   ProfileSignUp({Key key}) : super(key: key);
@@ -69,7 +69,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
             //   height: blockHeight * 2,
             // ),
             Container(
-              margin: EdgeInsets.only(left: margin, top: margin / 5),
+              // margin: EdgeInsets.only(left: margin, top: margin / 5),
               height: blockHeight * 45,
               // padding: EdgeInsets.all(blockHeight),
               // color: Colors.red,

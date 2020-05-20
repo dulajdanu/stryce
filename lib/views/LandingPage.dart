@@ -1,7 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:buddieU/sizeConfig.dart';
+import 'package:BuddieU/sizeConfig.dart';
 import 'dart:math' as math; // import this
 
 class LandingPage extends StatefulWidget {

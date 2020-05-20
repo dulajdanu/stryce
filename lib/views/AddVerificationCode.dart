@@ -1,7 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:buddieU/views/PutImage.dart';
+import 'package:BuddieU/views/PutImage.dart';
 
 import '../sizeConfig.dart';
 
@@ -215,7 +215,7 @@ class _AddVerificationCodeState extends State<AddVerificationCode> {
                 height: blockHeight * 3,
                 alignment: Alignment.center,
                 child: Text(
-                  "I agree to buddieU terms of servcie & privacy policies",
+                  "I agree to BuddieU terms of servcie & privacy policies",
                   style: TextStyle(
                     fontSize: 14,
                   ),

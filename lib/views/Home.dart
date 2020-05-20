@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:buddieU/sizeConfig.dart';
-import 'package:buddieU/views/ChatPage.dart';
-import 'package:buddieU/views/LandingPage.dart';
-import 'package:buddieU/views/MessagesView.dart';
-import 'package:buddieU/views/ProfileSignUpAbout.dart';
+import 'package:BuddieU/sizeConfig.dart';
+import 'package:BuddieU/views/ChatPage.dart';
+import 'package:BuddieU/views/LandingPage.dart';
+import 'package:BuddieU/views/MessagesView.dart';
+import 'package:BuddieU/views/ProfileSignUpAbout.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);

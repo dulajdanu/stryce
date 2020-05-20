@@ -2,7 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:buddieU/views/AddVerificationCode.dart';
+import 'package:BuddieU/views/AddVerificationCode.dart';
 
 import '../sizeConfig.dart';
 
@@ -294,7 +294,7 @@ class _LoginPageState extends State<LoginPage> {
                                           color: Colors.white,
                                           onPressed: () {},
                                           child: Text(
-                                            "Connect with Facebook",
+                                            "Connect with Google",
                                             style: TextStyle(
                                                 fontSize: 15,
                                                 color: Colors.grey),
@@ -307,16 +307,16 @@ class _LoginPageState extends State<LoginPage> {
                                 Expanded(
                                     child: Container(
                                   // color: Colors.blue,
-                                  alignment: Alignment.center,
+                                  alignment: Alignment.bottomCenter,
                                   child: Container(
                                     height: blockHeight * 3,
                                     // color: Colors.red,
-                                    alignment: Alignment.topCenter,
+                                    alignment: Alignment.bottomCenter,
                                     child: Text(
-                                      "I agree to buddieU terms of servcie & privacy policies",
+                                      "I agree to BuddieU terms of servcie & privacy policies",
                                       style: TextStyle(
-                                        fontSize: 12,
-                                      ),
+                                          fontSize: 12,
+                                          decoration: TextDecoration.underline),
                                     ),
                                   ),
                                 ))
