@@ -323,7 +323,7 @@ class _LoginPageState extends State<LoginPage> {
                                           ),
                                         ),
                                         Text(
-                                          'terms of servcie ',
+                                          'terms of service ',
                                           style: TextStyle(
                                               fontSize: 12,
                                               decoration:
