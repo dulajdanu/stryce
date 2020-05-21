@@ -67,8 +67,8 @@ class _PutYouBestState extends State<PutYouBest> {
                 decoration: BoxDecoration(
                     // border: Border.all(color: Colors.black, width: blockWidth)
                     ),
-                height: blockHeight * 20,
-                width: blockHeight * 20,
+                height: blockHeight * 35,
+                width: blockHeight * 35,
                 margin: EdgeInsets.symmetric(horizontal: margin),
                 alignment: Alignment.center,
                 child: SizedBox.expand(
@@ -91,7 +91,7 @@ class _PutYouBestState extends State<PutYouBest> {
               ),
               Container(
                 margin: EdgeInsets.only(left: margin),
-                height: blockHeight * 12,
+                height: blockHeight * 15,
                 // padding: EdgeInsets.all(blockHeight),
                 // color: Colors.red,
                 alignment: Alignment.centerLeft,
@@ -129,26 +129,32 @@ class _PutYouBestState extends State<PutYouBest> {
                 // color: Colors.redAccent,
                 height: blockHeight * 5,
               ),
-              Container(
-                // color: Colors.redAccent,
-                height: blockHeight * 5,
-                width: blockWidth * 40,
-                alignment: Alignment.center,
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => ProfileInfo()));
-                  },
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => ProfileInfo()));
+                },
+                child: Container(
+                  height: blockHeight * 5,
+                  width: blockWidth * 40,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      gradient: LinearGradient(colors: [
+                        Color(0xffec375c),
+                        Color(0xfff46163),
+                        Color(0xfff98467)
+                      ])),
                   child: Container(
                       // color: Colors.blue,
 
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          gradient: LinearGradient(colors: [
-                            Color(0xffec375c),
-                            Color(0xfff46163),
-                            Color(0xfff98467)
-                          ])),
+                      // decoration: BoxDecoration(
+                      //     borderRadius: BorderRadius.circular(10),
+                      //     gradient: LinearGradient(colors: [
+                      //       Color(0xffec375c),
+                      //       Color(0xfff46163),
+                      //       Color(0xfff98467)
+                      //     ])),
                       height: 5 * blockHeight,
                       width: blockWidth * 40,
                       margin: EdgeInsets.symmetric(horizontal: margin),
@@ -162,6 +168,9 @@ class _PutYouBestState extends State<PutYouBest> {
                       )),
                 ),
               ),
+              Container(
+                height: blockHeight * 5,
+              )
             ],
           ),
         ],
@@ -179,7 +188,7 @@ class _PutYouBestState extends State<PutYouBest> {
             // color: Colors.yellow,
             margin: EdgeInsets.symmetric(horizontal: 5),
             height: blockHeight * 10,
-            width: blockHeight * 10,
+            width: blockHeight * 13,
 
             // decoration: BoxDecoration(
             //     border: Border.all(color: Colors.grey, width: blockHeight / 2)),
@@ -190,7 +199,7 @@ class _PutYouBestState extends State<PutYouBest> {
             // color: Colors.yellow,
             margin: EdgeInsets.symmetric(horizontal: 5),
             height: blockHeight * 10,
-            width: blockHeight * 10,
+            width: blockHeight * 13,
 
             // decoration: BoxDecoration(
             //     border: Border.all(color: Colors.grey, width: blockHeight / 2)),
@@ -201,7 +210,7 @@ class _PutYouBestState extends State<PutYouBest> {
             // color: Colors.yellow,
             margin: EdgeInsets.symmetric(horizontal: 5),
             height: blockHeight * 10,
-            width: blockHeight * 10,
+            width: blockHeight * 13,
 
             // decoration: BoxDecoration(
             //     border: Border.all(color: Colors.grey, width: blockHeight / 2)),
@@ -212,7 +221,7 @@ class _PutYouBestState extends State<PutYouBest> {
             // color: Colors.yellow,
             margin: EdgeInsets.symmetric(horizontal: 5),
             height: blockHeight * 10,
-            width: blockHeight * 10,
+            width: blockHeight * 13,
 
             // decoration: BoxDecoration(
             //     border: Border.all(color: Colors.grey, width: blockHeight / 2)),
@@ -223,7 +232,7 @@ class _PutYouBestState extends State<PutYouBest> {
             // color: Colors.yellow,
             margin: EdgeInsets.symmetric(horizontal: 5),
             height: blockHeight * 10,
-            width: blockHeight * 10,
+            width: blockHeight * 13,
 
             // decoration: BoxDecoration(
             //     border: Border.all(color: Colors.grey, width: blockHeight / 2)),

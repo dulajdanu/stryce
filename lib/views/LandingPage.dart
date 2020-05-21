@@ -72,8 +72,12 @@ class _LandingPageState extends State<LandingPage> {
                       ),
                       Container(
                         decoration: BoxDecoration(
-                            color: Colors.grey, shape: BoxShape.circle),
-                        width: blockHeight * 6,
+                            image: DecorationImage(
+                                image: AssetImage("assets/virat.jpg")),
+                            color: Colors.grey,
+                            shape: BoxShape.circle),
+                        width: blockHeight * 4,
+                        alignment: Alignment.center,
                       )
                     ],
                   ),
@@ -81,7 +85,7 @@ class _LandingPageState extends State<LandingPage> {
               ),
               Container(
                 // color: Colors.greenAccent,
-                height: blockHeight * 10,
+                height: blockHeight * 8,
                 margin: EdgeInsets.symmetric(horizontal: margin / 2),
                 alignment: Alignment.topLeft,
                 child: HorizontalImagesView(blockHeight),
@@ -121,6 +125,9 @@ class _LandingPageState extends State<LandingPage> {
                                     color: Colors.red,
                                   ),
                                 )),
+                            SizedBox(
+                              width: 5,
+                            ),
                             Container(
                               // color: Colors.greenAccent,
                               width: blockHeight * 10,
@@ -175,10 +182,25 @@ class _LandingPageState extends State<LandingPage> {
                                 // color: Colors.yellowAccent,
                                 margin: EdgeInsets.only(left: blockHeight),
                                 alignment: Alignment.centerLeft,
-                                child: AutoSizeText(
-                                  "Nreekay,Phd-Ruckers University",
-                                  // style: TextStyle(fontSize: 10),
-                                  style: TextStyle(fontSize: 8),
+                                child: RichText(
+                                  text: new TextSpan(
+                                    // Note: Styles for TextSpans must be explicitly defined.
+                                    // Child text spans will inherit styles from parent
+                                    style: new TextStyle(
+                                      fontSize: 14.0,
+                                      color: Colors.black,
+                                    ),
+                                    children: <TextSpan>[
+                                      new TextSpan(
+                                          text: 'Nreeky \n',
+                                          style: new TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16)),
+                                      new TextSpan(
+                                        text: 'PHd Ruckers University',
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               )),
                               Expanded(
@@ -293,6 +315,9 @@ class _LandingPageState extends State<LandingPage> {
                                     color: Colors.red,
                                   ),
                                 )),
+                            SizedBox(
+                              width: 5,
+                            ),
                             Container(
                               // color: Colors.greenAccent,
                               width: blockHeight * 10,
@@ -344,15 +369,30 @@ class _LandingPageState extends State<LandingPage> {
                               Expanded(
                                   // flex: 2,
                                   child: Container(
-                                // color: Colors.yellowAccent,
-                                margin: EdgeInsets.only(left: blockHeight),
-                                alignment: Alignment.centerLeft,
-                                child: AutoSizeText(
-                                  "Nreekay,Phd-Ruckers University",
-                                  // style: TextStyle(fontSize: 10),
-                                  style: TextStyle(fontSize: 8),
-                                ),
-                              )),
+                                      // color: Colors.yellowAccent,
+                                      margin:
+                                          EdgeInsets.only(left: blockHeight),
+                                      alignment: Alignment.centerLeft,
+                                      child: RichText(
+                                        text: new TextSpan(
+                                          // Note: Styles for TextSpans must be explicitly defined.
+                                          // Child text spans will inherit styles from parent
+                                          style: new TextStyle(
+                                            fontSize: 14.0,
+                                            color: Colors.black,
+                                          ),
+                                          children: <TextSpan>[
+                                            new TextSpan(
+                                                text: 'Nreeky \n',
+                                                style: new TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 16)),
+                                            new TextSpan(
+                                              text: 'PHd Ruckers University',
+                                            ),
+                                          ],
+                                        ),
+                                      ))),
                               Expanded(
                                   child: Container(
                                 // color: Colors.green,
@@ -465,6 +505,9 @@ class _LandingPageState extends State<LandingPage> {
                                     color: Colors.red,
                                   ),
                                 )),
+                            SizedBox(
+                              width: 5,
+                            ),
                             Container(
                               // color: Colors.greenAccent,
                               width: blockHeight * 10,
@@ -516,15 +559,30 @@ class _LandingPageState extends State<LandingPage> {
                               Expanded(
                                   // flex: 2,
                                   child: Container(
-                                // color: Colors.yellowAccent,
-                                margin: EdgeInsets.only(left: blockHeight),
-                                alignment: Alignment.centerLeft,
-                                child: AutoSizeText(
-                                  "Nreekay,Phd-Ruckers University",
-                                  // style: TextStyle(fontSize: 10),
-                                  style: TextStyle(fontSize: 8),
-                                ),
-                              )),
+                                      // color: Colors.yellowAccent,
+                                      margin:
+                                          EdgeInsets.only(left: blockHeight),
+                                      alignment: Alignment.centerLeft,
+                                      child: RichText(
+                                        text: new TextSpan(
+                                          // Note: Styles for TextSpans must be explicitly defined.
+                                          // Child text spans will inherit styles from parent
+                                          style: new TextStyle(
+                                            fontSize: 14.0,
+                                            color: Colors.black,
+                                          ),
+                                          children: <TextSpan>[
+                                            new TextSpan(
+                                                text: 'Nreeky \n',
+                                                style: new TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 16)),
+                                            new TextSpan(
+                                              text: 'PHd Ruckers University',
+                                            ),
+                                          ],
+                                        ),
+                                      ))),
                               Expanded(
                                   child: Container(
                                 // color: Colors.green,
@@ -637,6 +695,9 @@ class _LandingPageState extends State<LandingPage> {
                                     color: Colors.red,
                                   ),
                                 )),
+                            SizedBox(
+                              width: 5,
+                            ),
                             Container(
                               // color: Colors.greenAccent,
                               width: blockHeight * 10,
@@ -691,10 +752,25 @@ class _LandingPageState extends State<LandingPage> {
                                 // color: Colors.yellowAccent,
                                 margin: EdgeInsets.only(left: blockHeight),
                                 alignment: Alignment.centerLeft,
-                                child: AutoSizeText(
-                                  "Nreekay,Phd-Ruckers University",
-                                  // style: TextStyle(fontSize: 10),
-                                  style: TextStyle(fontSize: 8),
+                                child: RichText(
+                                  text: new TextSpan(
+                                    // Note: Styles for TextSpans must be explicitly defined.
+                                    // Child text spans will inherit styles from parent
+                                    style: new TextStyle(
+                                      fontSize: 14.0,
+                                      color: Colors.black,
+                                    ),
+                                    children: <TextSpan>[
+                                      new TextSpan(
+                                          text: 'Nreeky \n',
+                                          style: new TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16)),
+                                      new TextSpan(
+                                        text: 'PHd Ruckers University',
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               )),
                               Expanded(
@@ -792,12 +868,12 @@ class _LandingPageState extends State<LandingPage> {
       children: <Widget>[
         Container(
           // color: Colors.yellow,
-          margin: EdgeInsets.symmetric(horizontal: 5),
-          height: blockHeight * 10,
-          width: blockHeight * 10,
+          margin: EdgeInsets.symmetric(horizontal: 3),
+          // height: blockHeight * 10,
+          width: blockHeight * 8,
 
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(10),
               image: DecorationImage(
                 alignment: Alignment.center,
                 matchTextDirection: true,
@@ -809,81 +885,88 @@ class _LandingPageState extends State<LandingPage> {
         ),
         Container(
           // color: Colors.yellow,
-          margin: EdgeInsets.symmetric(horizontal: 5),
-          height: blockHeight * 10,
-          width: blockHeight * 10,
-          alignment: Alignment.center,
-          // child: Image.asset("assets/virat.jpg"),
+          margin: EdgeInsets.symmetric(horizontal: 3),
+          // height: blockHeight * 10,
+          width: blockHeight * 8,
 
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(10),
               image: DecorationImage(
                 alignment: Alignment.center,
                 matchTextDirection: true,
                 repeat: ImageRepeat.noRepeat,
                 image: AssetImage("assets/virat.jpg"),
               )),
-        ),
-        Container(
-          // color: Colors.yellow,
-          margin: EdgeInsets.symmetric(horizontal: 5),
-          height: blockHeight * 10,
-          width: blockHeight * 10,
-          alignment: Alignment.center,
-          // child: Image.asset("assets/virat.jpeg"),
-
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              image: DecorationImage(
-                alignment: Alignment.center,
-                matchTextDirection: true,
-                repeat: ImageRepeat.noRepeat,
-                image: AssetImage("assets/virat.jpg"),
-              )),
-        ),
-        Container(
-          // color: Colors.yellow,
-          margin: EdgeInsets.symmetric(horizontal: 5),
-          height: blockHeight * 10,
-          width: blockHeight * 10,
           alignment: Alignment.center,
           // child: Image.asset("assets/vir.jpg"),
+        ),
+        Container(
+          // color: Colors.yellow,
+          margin: EdgeInsets.symmetric(horizontal: 3),
+          // height: blockHeight * 10,
+          width: blockHeight * 8,
 
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(10),
               image: DecorationImage(
                 alignment: Alignment.center,
                 matchTextDirection: true,
                 repeat: ImageRepeat.noRepeat,
                 image: AssetImage("assets/virat.jpg"),
               )),
-        ),
-        Container(
-          // color: Colors.yellow,
-          margin: EdgeInsets.symmetric(horizontal: 5),
-          height: blockHeight * 10,
-          width: blockHeight * 10,
           alignment: Alignment.center,
-          // child: Image.asset("assets/virat.jpg"),
+          // child: Image.asset("assets/vir.jpg"),
+        ),
+        Container(
+          // color: Colors.yellow,
+          margin: EdgeInsets.symmetric(horizontal: 3),
+          // height: blockHeight * 10,
+          width: blockHeight * 8,
 
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(10),
               image: DecorationImage(
                 alignment: Alignment.center,
                 matchTextDirection: true,
                 repeat: ImageRepeat.noRepeat,
                 image: AssetImage("assets/virat.jpg"),
               )),
+          alignment: Alignment.center,
+          // child: Image.asset("assets/vir.jpg"),
         ),
         Container(
           // color: Colors.yellow,
-          margin: EdgeInsets.symmetric(horizontal: 5),
-          height: blockHeight * 10,
-          width: blockHeight * 10,
+          margin: EdgeInsets.symmetric(horizontal: 3),
+          // height: blockHeight * 10,
+          width: blockHeight * 8,
 
           decoration: BoxDecoration(
-              // border: Border.all(color: Colors.grey, width: blockHeight / 2)
-              color: Colors.grey),
+              borderRadius: BorderRadius.circular(10),
+              image: DecorationImage(
+                alignment: Alignment.center,
+                matchTextDirection: true,
+                repeat: ImageRepeat.noRepeat,
+                image: AssetImage("assets/virat.jpg"),
+              )),
+          alignment: Alignment.center,
+          // child: Image.asset("assets/vir.jpg"),
+        ),
+        Container(
+          // color: Colors.yellow,
+          margin: EdgeInsets.symmetric(horizontal: 3),
+          // height: blockHeight * 10,
+          width: blockHeight * 8,
+
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              image: DecorationImage(
+                alignment: Alignment.center,
+                matchTextDirection: true,
+                repeat: ImageRepeat.noRepeat,
+                image: AssetImage("assets/virat.jpg"),
+              )),
+          alignment: Alignment.center,
+          // child: Image.asset("assets/vir.jpg"),
         ),
       ],
     );

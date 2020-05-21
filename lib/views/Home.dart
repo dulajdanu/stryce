@@ -1,3 +1,4 @@
+import 'package:BuddieU/views/Notifications.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:BuddieU/sizeConfig.dart';
@@ -20,7 +21,7 @@ class _HomePageState extends State<HomePage> {
     ProfileSignUp(),
     MesaagesView(),
     LandingPage(),
-    ChatPage(),
+    NotificationPage(),
     Text(
       'Index 2: settings',
       // style: optionStyle,
@@ -46,8 +47,8 @@ class _HomePageState extends State<HomePage> {
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.shifting,
-        unselectedItemColor: Colors.black,
-        selectedIconTheme: IconThemeData(color: Colors.grey),
+        unselectedItemColor: Colors.grey,
+        selectedIconTheme: IconThemeData(color: Colors.black),
         // selectedLabelStyle: TextStyle(color: Colors.grey),
         // iconSize: 10,
         items: <BottomNavigationBarItem>[

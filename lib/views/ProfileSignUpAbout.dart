@@ -78,19 +78,19 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
             ),
             Container(
               // color: Colors.blue,
-              height: blockHeight * 5,
+              height: blockHeight * 1,
             ),
             Container(
                 // color: Colors.red,
                 margin: EdgeInsets.symmetric(horizontal: margin),
-                height: blockHeight * 4,
+                height: blockHeight * 6,
                 alignment: Alignment.topLeft,
                 child: Row(
                   children: <Widget>[
                     AutoSizeText(
                       "Ryan George",
                       style: GoogleFonts.montserrat(
-                          fontSize: 30,
+                          fontSize: 40,
                           fontWeight: FontWeight.w500,
                           // color: Colors.grey,
                           foreground: Paint()..shader = linearGradient),
@@ -108,7 +108,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
             ),
             Container(
               // color: Colors.green,
-              height: blockHeight * 3,
+              height: blockHeight * 2.5,
               margin: EdgeInsets.symmetric(horizontal: margin),
               alignment: Alignment.topLeft,
               child: Row(
@@ -136,7 +136,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
               margin: EdgeInsets.symmetric(horizontal: margin),
               child: AutoSizeText(
                 "\"I enjoy football and cricket\"",
-                style: GoogleFonts.montserrat(fontSize: 16, color: Colors.grey),
+                style: GoogleFonts.montserrat(fontSize: 20, color: Colors.grey),
                 minFontSize: 14,
                 maxLines: 3,
               ),
@@ -228,33 +228,14 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                     ),
                     body: new TabBarView(
                       children: <Widget>[
-                        Container(
-                          margin: EdgeInsets.only(top: blockHeight * 2),
+                        SingleChildScrollView(
+                          // margin: EdgeInsets.only(top: blockHeight * 2),
                           child: Column(
                             children: <Widget>[
                               Container(
-                                decoration: BoxDecoration(
-                                  gradient: LinearGradient(colors: [
-                                    Color(0xffec375c),
-                                    Color(0xfff46163),
-                                    Color(0xfff98467)
-                                  ]),
-                                  borderRadius: BorderRadius.circular(10),
-                                  // border: Border.all(
-                                  //     width: blockHeight / 2,
-                                  //     color: Colors.grey)
-                                ),
-                                padding: EdgeInsets.all(blockHeight),
-                                // color: Colors.red,
-                                child: Text(
-                                  "What is the most spontaneous thing you've ever done",
-                                  style: TextStyle(
-                                      fontSize: 16, color: Colors.white),
-                                ),
-                              ),
-                              Container(
                                 margin:
                                     EdgeInsets.symmetric(vertical: margin / 5),
+
                                 decoration: BoxDecoration(
                                   gradient: LinearGradient(colors: [
                                     Color(0xffec375c),
@@ -266,7 +247,28 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                                   //     width: blockHeight / 2,
                                   //     color: Colors.grey)
                                 ),
-                                padding: EdgeInsets.all(blockHeight),
+                                padding: EdgeInsets.all(blockHeight * 2),
+                                // color: Colors.red,
+                                child: Text(
+                                  "What is the most spontaneous thing you've ever done",
+                                  style: TextStyle(
+                                      fontSize: 16, color: Colors.white),
+                                ),
+                              ),
+                              Container(
+                                margin: EdgeInsets.only(bottom: margin / 5),
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(colors: [
+                                    Color(0xffec375c),
+                                    Color(0xfff46163),
+                                    Color(0xfff98467)
+                                  ]),
+                                  borderRadius: BorderRadius.circular(10),
+                                  // border: Border.all(
+                                  //     width: blockHeight / 2,
+                                  //     color: Colors.grey)
+                                ),
+                                padding: EdgeInsets.all(blockHeight * 2),
                                 // color: Colors.red,
                                 child: Text(
                                   "What is the most spontaneous thing you've ever done",
@@ -286,7 +288,7 @@ class _ProfileSignUpState extends State<ProfileSignUp> {
                                   //     width: blockHeight / 2,
                                   //     color: Colors.grey)
                                 ),
-                                padding: EdgeInsets.all(blockHeight),
+                                padding: EdgeInsets.all(blockHeight * 2),
                                 // color: Colors.red,
                                 child: Text(
                                   "What is the most spontaneous thing you've ever done",

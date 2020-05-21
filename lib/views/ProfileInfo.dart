@@ -31,8 +31,40 @@ class _ProfileInfoState extends State<ProfileInfo> {
         child: Column(
           children: <Widget>[
             Container(
-              // color: Colors.redAccent,
+              // color: Colors.red,
               height: blockHeight * 10,
+              margin: EdgeInsets.symmetric(horizontal: margin / 2),
+              alignment: Alignment.centerLeft,
+              child: Container(
+                // color: Colors.green,
+                height: blockHeight * 4,
+                alignment: Alignment.topLeft,
+                child: Row(
+                  children: <Widget>[
+                    Container(
+                      // color: Colors.white,
+                      width: blockHeight * 5,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/logo2.png"),
+                    ),
+                    Expanded(
+                        child: Container(
+                      // color: Colors.grey,
+                      alignment: Alignment.center,
+                      child: Container(
+                        height: blockHeight * 6,
+                        // color: Colors.redAccent,
+                        alignment: Alignment.centerLeft,
+                        child: AutoSizeText(
+                          "BuddieU",
+                          style: GoogleFonts.montserrat(fontSize: 20),
+                          minFontSize: 15,
+                        ),
+                      ),
+                    ))
+                  ],
+                ),
+              ),
             ),
             Container(
                 // color: Colors.green,

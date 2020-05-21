@@ -312,11 +312,39 @@ class _LoginPageState extends State<LoginPage> {
                                     height: blockHeight * 3,
                                     // color: Colors.red,
                                     alignment: Alignment.bottomCenter,
-                                    child: Text(
-                                      "I agree to BuddieU terms of servcie & privacy policies",
-                                      style: TextStyle(
-                                          fontSize: 12,
-                                          decoration: TextDecoration.underline),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: <Widget>[
+                                        Text(
+                                          "I agree to BuddieU ",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                          ),
+                                        ),
+                                        Text(
+                                          'terms of servcie ',
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              decoration:
+                                                  TextDecoration.underline),
+                                        ),
+                                        Text(
+                                          '& ',
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                            // decoration:
+                                            //     TextDecoration.underline
+                                          ),
+                                        ),
+                                        Text(
+                                          'privacy policies',
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              decoration:
+                                                  TextDecoration.underline),
+                                        ),
+                                      ],
                                     ),
                                   ),
                                 ))

@@ -120,15 +120,26 @@ class _AddVerificationCodeState extends State<AddVerificationCode> {
             Container(
                 // color: Colors.red,
                 height: blockHeight * 6,
-                margin: EdgeInsets.symmetric(horizontal: margin),
+                margin: EdgeInsets.symmetric(horizontal: margin * 2),
                 alignment: Alignment.topCenter,
                 child: TextField(
                   textAlign: TextAlign.center,
                   decoration: InputDecoration(
-                      hintText: "Enter verification code",
-                      border: InputBorder.none,
-                      hintStyle: TextStyle()),
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.black, width: 2),
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.black, width: 2),
+                    ),
+                    hintText: "Enter verification code",
+                    hintStyle: TextStyle(),
+                  ),
                 )),
+            // Container(
+            //   color: Colors.blue,
+            //   height: blockHeight * 1,
+            //   width: blockWidth * 40,
+            // ),
             Container(
               // color: Colors.grey,
               height: blockHeight * 2,
@@ -214,11 +225,34 @@ class _AddVerificationCodeState extends State<AddVerificationCode> {
                 // color: Colors.redAccent,
                 height: blockHeight * 3,
                 alignment: Alignment.center,
-                child: Text(
-                  "I agree to BuddieU terms of servcie & privacy policies",
-                  style: TextStyle(
-                    fontSize: 14,
-                  ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      "I agree to BuddieU ",
+                      style: TextStyle(
+                        fontSize: 12,
+                      ),
+                    ),
+                    Text(
+                      'terms of servcie ',
+                      style: TextStyle(
+                          fontSize: 12, decoration: TextDecoration.underline),
+                    ),
+                    Text(
+                      '& ',
+                      style: TextStyle(
+                        fontSize: 12,
+                        // decoration:
+                        //     TextDecoration.underline
+                      ),
+                    ),
+                    Text(
+                      'privacy policies',
+                      style: TextStyle(
+                          fontSize: 12, decoration: TextDecoration.underline),
+                    ),
+                  ],
                 ),
               ),
             )
