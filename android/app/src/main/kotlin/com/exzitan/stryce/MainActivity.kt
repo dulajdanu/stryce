@@ -1,4 +1,4 @@
-package com.exzitan.BuddieU
+package com.example.BuddieU
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
